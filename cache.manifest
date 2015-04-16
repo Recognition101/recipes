@@ -2,9 +2,9 @@ CACHE MANIFEST
 
 # version 0.0.4
 
-/index.html
-/scripts.js
-/styles.css
+./index.html
+./scripts.js
+./styles.css
 
 NETWORK:
 
