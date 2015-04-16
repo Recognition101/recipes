@@ -1,0 +1,188 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+                 "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+                 sans-serif; 
+    font-weight: 300;
+    -webkit-text-size-adjust:none;
+}
+@media (max-width: 640px) {
+    body {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    h1, h2, h3, table {
+        margin: 5px;
+    }
+
+    .scrollable {
+        width: 100%;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+h3 {
+    margin-bottom: 0;
+}
+.table-of-contents {
+    list-style-type: none;
+    display: inline-block;
+    margin:5px 5px;
+    padding: 0;
+}
+.table-of-contents > li {
+    padding: 5px 0;
+    border-bottom: 1px solid #F0F0F0;
+}
+.table-of-contents > li:hover {
+    background-color: #F8F8F8;
+}
+.table-of-contents a {
+    text-decoration: none;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.recipe-toggle {
+    margin: 0.5em;
+    border: none;
+    padding: 1em;
+    width: 20em;
+
+    box-shadow: 0 0 1em 0.2em rgba(0,0,0,0.1);
+
+    background-color: white;
+}
+
+.recipe-toggle img {
+    max-width: 100%;
+}
+
+.recipe-toggle h2 {
+    margin: 0em;
+    padding: 0 0 0.5em 0;
+
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+@media (max-width: 640px) {
+    .recipe-toggle {
+        margin: 0.1em;
+        width: 14em;
+    }
+    .recipe-toggle h2 {
+        font-size: 1em;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+table td {
+    border: 1px solid #AAAAAA;
+    padding: 10px;
+}
+table td:first-child {
+    background-color: #F4F4F4;
+}
+
+table.chicken-yakisoba td:first-child  {min-width: 8.3em;/*min-width: 140px;*/}
+table.chicken-yakisoba td:nth-child(2) {min-width: 6.6em;}
+
+table.teriyaki-meatballs td:first-child  {min-width: 9em;}
+table.teriyaki-meatballs td:nth-child(2) {min-width: 4.8em;}
+
+table.oven-cooked-fajitas td:first-child {min-width: 10.8em;}
+
+table.chicken-in-peanut-sauce td:first-child  {min-width: 7.2em;}
+table.chicken-in-peanut-sauce td:nth-child(2) {min-width: 4.8em;}
+table.chicken-in-peanut-sauce td:nth-child(3) {min-width: 6em;}
+
+table.creamy-spinach-suasage-pasta td:first-child {min-width: 9.6em;}
+
+table.teriyaki-noodle-bowl td:first-child {min-width: 9.6em;}
+
+table.sesame-chicken td:first-child {min-width: 13.2em;}
+
+table.cold-soba-cucumber td:first-child {min-width: 12.6em;}
+table.cold-soba-cucumber td:nth-child(2) {min-width: 19em;}
+
+table.creamy-tomato-spinach-pasta td:first-child {min-width: 6.5em;}
+
+table.spicy-shrimp-tomato-pasta td:first-child {min-width:13em;}
+table.spicy-shrimp-tomato-pasta td:nth-child(2) {min-width:10.7em;}
+
+table.bbq-black-bean-pizza td:first-child {min-width:10em;}
+
+table.southwest-steak-bowl td:first-child {min-width:11.2em;}
+table.southwest-steak-bowl td:nth-child(5) {min-width:11.2em;}
+
+table.peanut-butter-quesadillas td:first-child {min-width: 8.9em;}
+table.peanut-butter-quesadillas td:nth-child(2) {min-width: 7.1em;}
+
+table.sausage-pepper-pasta td:first-child {min-width: 13em;}
+
+table.chipotle-sweet-potato-burgers td:first-child {min-width: 13em;}
+
+table.honey-sriracha-chicken td:first-child {min-width: 7em;}
+
+table.corn-zucchini-tacos td:first-child {min-width: 8em;}
+
+table.curried-chickpeans td:first-child {min-width: 7em;}
+
+table.chorizo-sp-skillet td:first-child  {min-width: 10em;}
+table.chorizo-sp-skillet td:nth-child(2) {min-width: 12em;}
+
+table.smokey-roasted-sp td:first-child {min-width: 14em;}
+
+table.honey-mustard-pork-chops td:first-child {min-width: 12em;}
+
+table.zucchini-corn-frittata td:first-child {min-width: 9em;}
+
+table.monterrey-chicken-skillet td:first-child {min-width: 14em;}
+
+table.sausage-kale-skillet td:first-child {min-width: 10em;}
+table.sausage-kale-skillet td:nth-child(2) {min-width: 23em;}
+
+table.spicy-pork-pad-thai td:first-child {min-width: 14em;}
+
+table.baked-eggs-spinach-tomatoes td:first-child {min-width: 16em;}
+
+table.bacon-spinach-pasta-parmesan td:first-child {min-width: 8em;}
+
+table.hoisin-noodle-salad td:first-child {min-width: 14em;}
+
+table.spinach-tomato-quesadillas td:first-child {min-width: 12em;}
+table.spinach-tomato-quesadillas td:nth-child(2) {min-width: 24em;}
+
+table.southwest-mac-cheese td:first-child {min-width: 12em;}
+
+table.sauteed-corn-tomatoes td:first-child {min-width: 8em;}
+
+table.beef-pineapple-enchiladas td:first-child {min-width: 11em;}
+
+table.strawberry-wc-scones td:first-child {min-width: 14em;}
+
+table.coconut-vegetable-curry td:first-child {min-width: 12em;}
+
+table.weeknight-black-bean-chili td:first-child {min-width: 10em;}
+
+table.pasta-pumpkin-sauce td:first-child {min-width: 10em;}
+
+table.green-chile-breakfast-quesadillas td:first-child {min-width: 14em;}
+table.green-chile-breakfast-quesadillas td:nth-child(2) {min-width: 8em;}
+
+table.peanut-butter-cup-pie td:first-child {min-width: 14em;}
+
+table.beef-broccoli-stir-fry td:first-child {min-width: 13em;}
+
+table.skillet-potatoes-green-beans td:first-child {min-width: 14em;}
+
+table.curry-roasted-carrots td:first-child {min-width: 10em;}
+table.curry-roasted-carrots td:nth-child(2) {min-width: 22em;}
+table.curry-roasted-carrots td:nth-child(3) {min-width: 10em;}
