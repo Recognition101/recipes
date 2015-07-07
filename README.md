@@ -1,6 +1,8 @@
 # Recipes
 
-This is just a small collection of recipes. They are reformatted to take minimal space, and are set up in cards. To see each recipe card, tap the title or picture of the recipe.
+This is just a small collection of recipes. They are reformatted to take minimal space, and are set up in cards. To see each recipe card, tap the title or picture of the recipe. You can view the collection here:
+
+[http://recognition101.github.io/recipes/](http://recognition101.github.io/recipes/)
 
 
 # Reading a Card
