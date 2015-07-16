@@ -195,3 +195,6 @@ table.sweet-spicy-chicken-bowl td:first-child {min-width: 12em;}
 table.sweet-spicy-chicken-bowl td:nth-child(2) {min-width: 10em;}
 
 table.beef-potato-tacos td:first-child {min-width: 11em;}
+
+table.chicken-kale-caesar-wrap td:first-child {min-width: 10em;}
+table.chicken-kale-caesar-wrap td:nth-child(2) { min-width: 12em; }
