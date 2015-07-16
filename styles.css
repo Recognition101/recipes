@@ -198,3 +198,6 @@ table.beef-potato-tacos td:first-child {min-width: 11em;}
 
 table.chicken-kale-caesar-wrap td:first-child {min-width: 10em;}
 table.chicken-kale-caesar-wrap td:nth-child(2) { min-width: 12em; }
+
+table.crunchy-chinese-chicken-salad td:first-child {min-width: 14em;}
+table.crunchy-chinese-chicken-salad td:nth-child(2) { min-width: 12em; }
