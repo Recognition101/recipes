@@ -79,6 +79,15 @@ h3 {
     }
 }
 
+.image-container {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+@media (max-width: 640px) {
+    .image-container { max-height: 100px; }
+}
+
 table {
     border-collapse: collapse;
     border-radius: 5px;
@@ -260,3 +269,16 @@ table.kale-cajun-chickpeas td:first-child { min-width: 12em; }
 table.sticky-ginger-soy-chicken td:first-child { min-width: 12em; }
 
 table.cowboy-caviar td:first-child { min-width: 12em; }
+
+table.oreo-krispies td:first-child { min-width: 17em; }
+
+table.okonomiyaki td:first-child { min-width: 10em; }
+
+table.balsamic-chicken-skillet td:first-child { min-width: 12em; }
+
+table.raspberry-cream-cookies td:first-child { min-width: 12em; }
+
+table.butternut-squash-mac td:first-child { min-width: 12em; }
+
+table.spring-rolls td:first-child { min-width: 14em; }
+table.spring-rolls td:nth-child(2) { min-width: 12em; }
