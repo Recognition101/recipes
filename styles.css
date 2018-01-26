@@ -317,3 +317,8 @@ table.shrimp-tacos td:first-child { min-width: 11em; }
 table.streuseled-sweet-potatoes td:first-child { min-width: 10em; }
 
 table.moroccan-potatoes td:first-child { min-width: 10em; }
+
+table.vinegar-mayo-potatoes td:first-child { min-width: 12em; }
+
+table.chorizo-breakfast-hash td:first-child { min-width: 10em; }
+table.chorizo-breakfast-hash td:nth-child(2) { min-width: 5em; }
