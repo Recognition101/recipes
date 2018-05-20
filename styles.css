@@ -1,7 +1,7 @@
 body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
                  "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
-                 sans-serif; 
+                 sans-serif;
     font-weight: 300;
     -webkit-text-size-adjust:none;
 }
@@ -322,3 +322,5 @@ table.vinegar-mayo-potatoes td:first-child { min-width: 12em; }
 
 table.chorizo-breakfast-hash td:first-child { min-width: 10em; }
 table.chorizo-breakfast-hash td:nth-child(2) { min-width: 5em; }
+
+table.smoothie-v2 td:first-child { min-width: 12em; }
