@@ -4,7 +4,12 @@ body {
                  sans-serif;
     font-weight: 300;
     -webkit-text-size-adjust:none;
+
+    --color-recipe-border: #AAA;
+    --color-recipe-ingredient: #F5FFFF;
+    --color-recipe-ingredient-alt: #F5F5F5;
 }
+
 @media (max-width: 640px) {
     body {
         font-size: 10px;
@@ -21,25 +26,34 @@ body {
         -webkit-overflow-scrolling: touch;
     }
 }
+
 h3 {
     margin-bottom: 0;
 }
-.table-of-contents {
-    list-style-type: none;
-    display: inline-block;
-    margin:5px 5px;
-    padding: 0;
+
+.grid, .grid > div {
+    border-color: var(--color-recipe-border);
+    border-style: solid;
 }
-.table-of-contents > li {
-    padding: 5px 0;
-    border-bottom: 1px solid #F0F0F0;
+
+.grid {
+    display: grid;
+    border-width: 0 1px 1px 0;
+    overflow-x: scroll;
 }
-.table-of-contents > li:hover {
-    background-color: #F8F8F8;
+
+.grid > div {
+    border-width: 1px 0 0 1px;
+    padding: 4px;
 }
-.table-of-contents a {
-    text-decoration: none;
-    display: block;
+
+.start {
+    grid-column-start: 1;
+    background-color: var(--color-recipe-ingredient);
+}
+
+.start-odd {
+    background-color: var(--color-recipe-ingredient-alt);
 }
 
 .hidden {
@@ -79,256 +93,92 @@ h3 {
     }
 }
 
-.image-container {
-    max-height: 150px;
-    overflow: hidden;
-}
-
-@media (max-width: 640px) {
-    .image-container { max-height: 100px; }
-}
-
-table {
-    border-collapse: collapse;
-    border-radius: 5px;
-}
-table td {
-    border: 1px solid #AAAAAA;
-    padding: 10px;
-}
-table td:first-child {
-    background-color: #F4F4F4;
-}
-
-table.chicken-yakisoba td:first-child  {min-width: 8.3em;/*min-width: 140px;*/}
-table.chicken-yakisoba td:nth-child(2) {min-width: 6.6em;}
-
-table.teriyaki-meatballs td:first-child  {min-width: 9em;}
-table.teriyaki-meatballs td:nth-child(2) {min-width: 4.8em;}
-
-table.oven-cooked-fajitas td:first-child {min-width: 10.8em;}
-
-table.chicken-in-peanut-sauce td:first-child  {min-width: 7.2em;}
-table.chicken-in-peanut-sauce td:nth-child(2) {min-width: 4.8em;}
-table.chicken-in-peanut-sauce td:nth-child(3) {min-width: 6em;}
-
-table.creamy-spinach-suasage-pasta td:first-child {min-width: 9.6em;}
-
-table.teriyaki-noodle-bowl td:first-child {min-width: 9.6em;}
-
-table.sesame-chicken td:first-child {min-width: 13.2em;}
-
-table.cold-soba-cucumber td:first-child {min-width: 12.6em;}
-table.cold-soba-cucumber td:nth-child(2) {min-width: 19em;}
-
-table.creamy-tomato-spinach-pasta td:first-child {min-width: 6.5em;}
-
-table.spicy-shrimp-tomato-pasta td:first-child {min-width:13em;}
-table.spicy-shrimp-tomato-pasta td:nth-child(2) {min-width:10.7em;}
-
-table.bbq-black-bean-pizza td:first-child {min-width:10em;}
-
-table.southwest-steak-bowl td:first-child {min-width:11.2em;}
-table.southwest-steak-bowl td:nth-child(5) {min-width:11.2em;}
-
-table.peanut-butter-quesadillas td:first-child {min-width: 8.9em;}
-table.peanut-butter-quesadillas td:nth-child(2) {min-width: 7.1em;}
-
-table.sausage-pepper-pasta td:first-child {min-width: 13em;}
-
-table.chipotle-sweet-potato-burgers td:first-child {min-width: 13em;}
-
-table.honey-sriracha-chicken td:first-child {min-width: 7em;}
-
-table.corn-zucchini-tacos td:first-child {min-width: 8em;}
-
-table.curried-chickpeans td:first-child {min-width: 7em;}
-
-table.chorizo-sp-skillet td:first-child  {min-width: 10em;}
-table.chorizo-sp-skillet td:nth-child(2) {min-width: 12em;}
-
-table.smokey-roasted-sp td:first-child {min-width: 14em;}
-
-table.honey-mustard-pork-chops td:first-child {min-width: 12em;}
-
-table.zucchini-corn-frittata td:first-child {min-width: 9em;}
-
-table.monterrey-chicken-skillet td:first-child {min-width: 14em;}
-
-table.sausage-kale-skillet td:first-child {min-width: 10em;}
-table.sausage-kale-skillet td:nth-child(2) {min-width: 23em;}
-
-table.spicy-pork-pad-thai td:first-child {min-width: 14em;}
-
-table.baked-eggs-spinach-tomatoes td:first-child {min-width: 16em;}
-
-table.bacon-spinach-pasta-parmesan td:first-child {min-width: 8em;}
-
-table.hoisin-noodle-salad td:first-child {min-width: 14em;}
-
-table.spinach-tomato-quesadillas td:first-child {min-width: 12em;}
-table.spinach-tomato-quesadillas td:nth-child(2) {min-width: 24em;}
-
-table.southwest-mac-cheese td:first-child {min-width: 12em;}
-
-table.sauteed-corn-tomatoes td:first-child {min-width: 8em;}
-
-table.beef-pineapple-enchiladas td:first-child {min-width: 11em;}
-
-table.strawberry-wc-scones td:first-child {min-width: 14em;}
-
-table.coconut-vegetable-curry td:first-child {min-width: 12em;}
-
-table.weeknight-black-bean-chili td:first-child {min-width: 10em;}
-
-table.pasta-pumpkin-sauce td:first-child {min-width: 10em;}
-
-table.green-chile-breakfast-quesadillas td:first-child {min-width: 14em;}
-table.green-chile-breakfast-quesadillas td:nth-child(2) {min-width: 8em;}
-
-table.peanut-butter-cup-pie td:first-child {min-width: 14em;}
-
-table.beef-broccoli-stir-fry td:first-child {min-width: 13em;}
-
-table.skillet-potatoes-green-beans td:first-child {min-width: 14em;}
-
-table.curry-roasted-carrots td:first-child {min-width: 10em;}
-table.curry-roasted-carrots td:nth-child(2) {min-width: 22em;}
-table.curry-roasted-carrots td:nth-child(3) {min-width: 10em;}
-
-table.curry-potatoes-poached-eggs td:first-child {min-width: 10em;}
-
-table.blackberry-sage-pork-chops td:first-child {min-width: 9em;}
-
-table.sweet-spicy-chicken-bowl td:first-child {min-width: 12em;}
-table.sweet-spicy-chicken-bowl td:nth-child(2) {min-width: 10em;}
-
-table.beef-potato-tacos td:first-child {min-width: 11em;}
-
-table.chicken-kale-caesar-wrap td:first-child {min-width: 10em;}
-table.chicken-kale-caesar-wrap td:nth-child(2) { min-width: 12em; }
-
-table.crunchy-chinese-chicken-salad td:first-child {min-width: 14em;}
-table.crunchy-chinese-chicken-salad td:nth-child(2) { min-width: 12em; }
-
-table.sweet-potato-avocado-tacos td:first-child { min-width: 10em; }
-table.sweet-potato-avocado-tacos td:nth-child(2) { min-width: 13em; }
-
-table.taco-salad-skillet td:first-child { min-width: 10em; }
-
-table.peanut-butter-smores td:first-child { min-width: 10em; }
-
-table.parmesan-roasted-cauliflower td:first-child { min-width: 12em; }
-
-table.banana-bread td:first-child { min-width: 12em; }
-
-table.red-pepper-feta-frittata td:first-child { min-width: 10em; }
-
-table.nam-sod td:first-child { min-width: 12em; }
-
-table.vegetable-enchilada-casserole td:first-child { min-width: 10em; }
-
-table.garlic-parmesan-polenta td:first-child { min-width: 8em; }
-
-table.eggplant-parmesan-pasta td:first-child { min-width: 8em; }
-
-table.chicken-stew td:first-child { min-width: 12em; }
-
-table.oreo-fudge td:first-child { min-width: 12em; }
-
-table.turkey-chili-baked-sweet-potatoes td:first-child { min-width: 10em; }
-
-table.cheesy-gnocchi-skillet td:first-child { min-width: 10em; }
-
-table.spicy-vegan-potato-curry td:first-child { min-width: 8em; }
-
-table.weeknight-enchiladas td:first-child { min-width: 10em; }
-
-table.chana-aloo-masala td:first-child { min-width: 8em; }
-
-table.stir-fry-beef-noodles td:first-child { min-width: 12em; }
-
-table.blackened-shrimp-pasta td:first-child { min-width: 15em; }
-
-table.crispy-baked-drumsticks td:first-child { min-width: 12em; }
-
-table.thai-curry-vegetable-soup td:first-child { min-width: 13em; }
-
-table.hoisin-peanut-stir-fry td:first-child { min-width: 11em; }
-
-table.chicken-marsala td:first-child { min-width: 11em; }
-
-table.shakshuka td:first-child { min-width: 8em; }
-
-table.lemon-berry-cobbler td:first-child { min-width: 10em; }
-
-table.corn-avocado-salad td:first-child { min-width: 12em; }
-
-table.kale-cajun-chickpeas td:first-child { min-width: 12em; }
-
-table.sticky-ginger-soy-chicken td:first-child { min-width: 12em; }
-
-table.cowboy-caviar td:first-child { min-width: 12em; }
-
-table.oreo-krispies td:first-child { min-width: 17em; }
-
-table.okonomiyaki td:first-child { min-width: 10em; }
-
-table.balsamic-chicken-skillet td:first-child { min-width: 12em; }
-
-table.raspberry-cream-cookies td:first-child { min-width: 12em; }
-
-table.butternut-squash-mac td:first-child { min-width: 12em; }
-
-table.spring-rolls td:first-child { min-width: 14em; }
-table.spring-rolls td:nth-child(2) { min-width: 12em; }
-
-table.pao-de-quejo td:first-child { min-width: 11em; }
-
-table.ham-and-cheese-quiche td:first-child { min-width: 16em; }
-
-table.heirloom-cherry-tomato-tart td:first-child { min-width: 14em; }
-
-table.belgian-waffles td:first-child { min-width: 10em; }
-table.belgian-waffles td:nth-child(2) { min-width: 9em; }
-
-.cloud-egg-image {
-    overflow: hidden;
-}
-
-.cloud-egg-image > img {
-    margin-top: -70px;
-}
-
-table.cloud-eggs td:first-child { min-width: 10em; }
-
-table.japchae td:first-child { min-width: 10em; }
-
-table.chicken-tomatillo td:first-child { min-width: 10em; }
-
-table.peach-pork-chops td:first-child { min-width: 9em; }
-
-table.corn-quesadillas td:first-child { min-width: 16em; }
-
-table.gai-pad-krapow td:first-child { min-width: 10em; }
-
-table.shrimp-tacos td:first-child { min-width: 11em; }
-
-table.streuseled-sweet-potatoes td:first-child { min-width: 10em; }
-
-table.moroccan-potatoes td:first-child { min-width: 10em; }
-
-table.vinegar-mayo-potatoes td:first-child { min-width: 12em; }
-
-table.chorizo-breakfast-hash td:first-child { min-width: 10em; }
-table.chorizo-breakfast-hash td:nth-child(2) { min-width: 5em; }
-
-table.smoothie-v2 td:first-child { min-width: 12em; }
-
-table.african-peanut-stew td:first-child { min-width: 10em; }
-
-table.pad-kee-mao td:first-child { min-width: 14em; }
-
-table.summer-vegetables-and-chickpeas td:first-child { min-width: 20em; }
-
-table.hoisin-tofu-lettuce td:first-child { min-width: 10em; }
+/* ---------- GRID SHORTHAND ---------- */
+
+.grid-2  { grid-template-columns: minmax(max-content, 1fr) repeat( 1, 1fr); }
+.grid-3  { grid-template-columns: minmax(max-content, 1fr) repeat( 2, 1fr); }
+.grid-4  { grid-template-columns: minmax(max-content, 1fr) repeat( 3, 1fr); }
+.grid-5  { grid-template-columns: minmax(max-content, 1fr) repeat( 4, 1fr); }
+.grid-6  { grid-template-columns: minmax(max-content, 1fr) repeat( 5, 1fr); }
+.grid-7  { grid-template-columns: minmax(max-content, 1fr) repeat( 6, 1fr); }
+.grid-8  { grid-template-columns: minmax(max-content, 1fr) repeat( 7, 1fr); }
+.grid-9  { grid-template-columns: minmax(max-content, 1fr) repeat( 8, 1fr); }
+.grid-10 { grid-template-columns: minmax(max-content, 1fr) repeat( 9, 1fr); }
+.grid-11 { grid-template-columns: minmax(max-content, 1fr) repeat(10, 1fr); }
+.grid-12 { grid-template-columns: minmax(max-content, 1fr) repeat(11, 1fr); }
+.grid-13 { grid-template-columns: minmax(max-content, 1fr) repeat(12, 1fr); }
+.grid-14 { grid-template-columns: minmax(max-content, 1fr) repeat(13, 1fr); }
+.grid-15 { grid-template-columns: minmax(max-content, 1fr) repeat(14, 1fr); }
+.grid-16 { grid-template-columns: minmax(max-content, 1fr) repeat(15, 1fr); }
+.grid-17 { grid-template-columns: minmax(max-content, 1fr) repeat(16, 1fr); }
+.grid-18 { grid-template-columns: minmax(max-content, 1fr) repeat(17, 1fr); }
+.grid-19 { grid-template-columns: minmax(max-content, 1fr) repeat(18, 1fr); }
+.grid-20 { grid-template-columns: minmax(max-content, 1fr) repeat(19, 1fr); }
+.grid-21 { grid-template-columns: minmax(max-content, 1fr) repeat(20, 1fr); }
+.grid-22 { grid-template-columns: minmax(max-content, 1fr) repeat(21, 1fr); }
+.grid-23 { grid-template-columns: minmax(max-content, 1fr) repeat(22, 1fr); }
+.grid-24 { grid-template-columns: minmax(max-content, 1fr) repeat(23, 1fr); }
+.grid-25 { grid-template-columns: minmax(max-content, 1fr) repeat(24, 1fr); }
+.grid-26 { grid-template-columns: minmax(max-content, 1fr) repeat(25, 1fr); }
+.grid-27 { grid-template-columns: minmax(max-content, 1fr) repeat(26, 1fr); }
+.grid-28 { grid-template-columns: minmax(max-content, 1fr) repeat(27, 1fr); }
+.grid-29 { grid-template-columns: minmax(max-content, 1fr) repeat(28, 1fr); }
+.grid-30 { grid-template-columns: minmax(max-content, 1fr) repeat(29, 1fr); }
+
+.grid >  [data-add="2"] { grid-row: span  2; }
+.grid >  [data-add="3"] { grid-row: span  3; }
+.grid >  [data-add="4"] { grid-row: span  4; }
+.grid >  [data-add="5"] { grid-row: span  5; }
+.grid >  [data-add="6"] { grid-row: span  6; }
+.grid >  [data-add="7"] { grid-row: span  7; }
+.grid >  [data-add="8"] { grid-row: span  8; }
+.grid >  [data-add="9"] { grid-row: span  9; }
+.grid > [data-add="10"] { grid-row: span 10; }
+.grid > [data-add="11"] { grid-row: span 11; }
+.grid > [data-add="12"] { grid-row: span 12; }
+.grid > [data-add="13"] { grid-row: span 13; }
+.grid > [data-add="14"] { grid-row: span 14; }
+.grid > [data-add="15"] { grid-row: span 15; }
+.grid > [data-add="16"] { grid-row: span 16; }
+.grid > [data-add="17"] { grid-row: span 17; }
+.grid > [data-add="18"] { grid-row: span 18; }
+.grid > [data-add="19"] { grid-row: span 19; }
+.grid > [data-add="20"] { grid-row: span 20; }
+.grid > [data-add="21"] { grid-row: span 21; }
+.grid > [data-add="22"] { grid-row: span 22; }
+.grid > [data-add="23"] { grid-row: span 23; }
+.grid > [data-add="24"] { grid-row: span 24; }
+.grid > [data-add="25"] { grid-row: span 25; }
+.grid > [data-add="26"] { grid-row: span 26; }
+.grid > [data-add="27"] { grid-row: span 27; }
+.grid > [data-add="28"] { grid-row: span 28; }
+.grid > [data-add="29"] { grid-row: span 29; }
+
+.grid > .c2  { grid-column: span  2; }
+.grid > .c3  { grid-column: span  3; }
+.grid > .c4  { grid-column: span  4; }
+.grid > .c5  { grid-column: span  5; }
+.grid > .c6  { grid-column: span  6; }
+.grid > .c7  { grid-column: span  7; }
+.grid > .c8  { grid-column: span  8; }
+.grid > .c9  { grid-column: span  9; }
+.grid > .c10 { grid-column: span 10; }
+.grid > .c11 { grid-column: span 11; }
+.grid > .c12 { grid-column: span 12; }
+.grid > .c13 { grid-column: span 13; }
+.grid > .c14 { grid-column: span 14; }
+.grid > .c15 { grid-column: span 15; }
+.grid > .c16 { grid-column: span 16; }
+.grid > .c17 { grid-column: span 17; }
+.grid > .c18 { grid-column: span 18; }
+.grid > .c19 { grid-column: span 19; }
+.grid > .c20 { grid-column: span 20; }
+.grid > .c21 { grid-column: span 21; }
+.grid > .c22 { grid-column: span 22; }
+.grid > .c23 { grid-column: span 23; }
+.grid > .c24 { grid-column: span 24; }
+.grid > .c25 { grid-column: span 25; }
+.grid > .c26 { grid-column: span 26; }
+.grid > .c27 { grid-column: span 27; }
+.grid > .c28 { grid-column: span 28; }
+.grid > .c29 { grid-column: span 29; }
