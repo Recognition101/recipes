@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "strict": true,
+        "outDir": "./dist/tsc/",
+        "noEmit": true,
+        "lib": [ "dom", "esnext", "webworker" ]
+    },
+    "files": [ "./scripts.js", "./cache-worker.js" ]
+}
