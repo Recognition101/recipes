@@ -3,33 +3,65 @@ body {
                  "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
                  sans-serif;
     font-weight: 300;
-    -webkit-text-size-adjust:none;
+    -webkit-text-size-adjust: none;
 
     --color-recipe-border: #AAA;
     --color-recipe-ingredient: #F5FFFF;
     --color-recipe-ingredient-alt: #F5F5F5;
 }
 
+/* ---------- GRID OF BUTTONS ---------- */
+
+body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: row dense;
+    gap: 20px;
+
+    font-size: 16px;
+}
+
+body h1 {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+}
+
+.recipe-toggle {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    border: 1px solid var(--color-recipe-border);
+
+    background-color: var(--color-recipe-ingredient);
+    border-radius: 5px;
+    box-shadow: 0 0.3rem 0.5rem 0.2rem rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.recipe-toggle h2 {
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.recipe-toggle img {
+    width: 100%;
+}
+
+.recipe {
+    grid-column: 1 / -1;
+}
+
 @media (max-width: 640px) {
     body {
         font-size: 10px;
-        margin: 0;
-    }
-
-    h1, h2, h3, table {
+        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         margin: 5px;
     }
-
-    .scrollable {
-        width: 100%;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
 }
 
-h3 {
-    margin-bottom: 0;
-}
+/* ---------- RECIPE GRID ---------- */
 
 .grid, .grid > div {
     border-color: var(--color-recipe-border);
@@ -40,6 +72,7 @@ h3 {
     display: grid;
     border-width: 0 1px 1px 0;
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .grid > div {
@@ -58,39 +91,6 @@ h3 {
 
 .hidden {
     display: none;
-}
-
-.recipe-toggle {
-    margin: 0.5em;
-    border: none;
-    padding: 1em;
-    width: 20em;
-
-    box-shadow: 0 0 1em 0.2em rgba(0,0,0,0.1);
-
-    background-color: white;
-}
-
-.recipe-toggle img {
-    max-width: 100%;
-}
-
-.recipe-toggle h2 {
-    margin: 0em;
-    padding: 0 0 0.5em 0;
-
-    font-size: 2em;
-    font-weight: lighter;
-}
-
-@media (max-width: 640px) {
-    .recipe-toggle {
-        margin: 0.1em;
-        width: 14em;
-    }
-    .recipe-toggle h2 {
-        font-size: 1em;
-    }
 }
 
 /* ---------- GRID SHORTHAND ---------- */
