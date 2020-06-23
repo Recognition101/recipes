@@ -5,9 +5,23 @@ body {
     font-weight: 300;
     -webkit-text-size-adjust: none;
 
-    --color-recipe-border: #AAA;
-    --color-recipe-ingredient: #F5FFFF;
-    --color-recipe-ingredient-alt: #F5F5F5;
+    --color-text: rgb(0, 0, 0);
+    --color-border: rgb(204, 204, 204);
+    --color-recipe-border: rgb(27, 173, 248);
+    --color-recipe-background: rgb(210, 235, 254);
+    --color-background: rgb(255, 255, 255);
+    --color-background-alt: rgb(228, 228, 228);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --color-text: rgb(255, 255, 255);
+        --color-border: rgb(0, 0, 0);
+        --color-recipe-border: rgb(27, 173, 248);
+        --color-recipe-background: rgb(32, 57, 77);
+        --color-background: rgb(30, 30, 30);
+        --color-background-alt: rgb(55, 55, 55);
+    }
 }
 
 /* ---------- GRID OF BUTTONS ---------- */
@@ -19,11 +33,17 @@ body {
     gap: 20px;
 
     font-size: 16px;
+    color: var(--color-text);
+    background-color: var(--color-background);
 }
 
 body h1 {
     grid-column: 1 / -1;
     font-size: 2rem;
+}
+
+body h2 {
+    color: var(--color-text);
 }
 
 .recipe-toggle {
@@ -33,7 +53,7 @@ body h1 {
 
     border: 1px solid var(--color-recipe-border);
 
-    background-color: var(--color-recipe-ingredient);
+    background-color: var(--color-recipe-background);
     border-radius: 5px;
     box-shadow: 0 0.3rem 0.5rem 0.2rem rgba(0,0,0,0.1);
     cursor: pointer;
@@ -64,7 +84,7 @@ body h1 {
 /* ---------- RECIPE GRID ---------- */
 
 .grid, .grid > div {
-    border-color: var(--color-recipe-border);
+    border-color: var(--color-border);
     border-style: solid;
 }
 
@@ -82,11 +102,11 @@ body h1 {
 
 .start {
     grid-column-start: 1;
-    background-color: var(--color-recipe-ingredient);
+    background-color: var(--color-background);
 }
 
 .start-odd {
-    background-color: var(--color-recipe-ingredient-alt);
+    background-color: var(--color-background-alt);
 }
 
 .hidden {
