@@ -6,7 +6,7 @@
         "strict": true,
         "outDir": "./dist/tsc/",
         "noEmit": true,
-        "lib": [ "dom", "esnext", "webworker" ]
+        "lib": [ "dom", "esnext" ]
     },
-    "files": [ "./scripts.js", "./cache-worker.js" ]
+    "files": [ "./src/display.js" ]
 }
