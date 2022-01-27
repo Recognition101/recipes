@@ -29,7 +29,7 @@ const getNextMatchingSibling = (element, selector) => {
  * @param {string|null} [selector] if given, only consider matching elements
  * @return {HTMLElement|null} the matching node, or `null` if none matched
  */
-const findText = (element, fragment, selector) => {
+export const findText = (element, fragment, selector) => {
     while(element) {
         if (element instanceof HTMLElement
             && element.innerText.toLowerCase().includes(fragment)) {
@@ -44,13 +44,14 @@ const findText = (element, fragment, selector) => {
  * Gets the length of a slice of DOM siblings with a given `start` and `end`.
  * @param {Element|null|undefined} start the start of the sibling slice to count
  * @param {Element|null|undefined} end the end of the sibling slice to count
+ * @param {string} selector only count siblings matching this
  * @return {number} `[ start, ..., end ].length`, or 0 if `start` is `end`
  */
-const getSiblingSliceCount = (start, end) => {
+const getSiblingSliceCount = (start, end, selector) => {
     let index = 0;
     while(start && start !== end) {
         start = start.nextElementSibling;
-        index += 1;
+        index += !selector || start?.matches(selector) ? 1 : 0;
     }
     return index;
 };
@@ -103,8 +104,8 @@ export const addColumnSpans = grid => {
 
         if (parent && domFrom && domLast && insertBefore) {
             parent.insertBefore(cell, insertBefore);
-            const count = getSiblingSliceCount(domFrom, domLast);
-            cell.setAttribute('data-add', count.toString());
+            const count = getSiblingSliceCount(domFrom, domLast, '.start');
+            cell.setAttribute('data-add', (count + 1).toString());
         } else {
             console.error(`Could not find referenced data-span="${span}"`);
         }

@@ -37,8 +37,10 @@ const cacheRefresh = async request => {
 serviceWorker.addEventListener('install', ev => {
     ev.waitUntil(caches.open(cacheId).then(cache => cache.addAll([
         './index.html',
-        './scripts.js',
-        './styles.css'
+        './main.js',
+        './src/data.js',
+        './src/dom.js',
+        './src/styles.css'
     ])));
 });
 

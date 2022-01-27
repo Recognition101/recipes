@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
-        "target": "esnext",
+        "target": "ESNext",
         "allowJs": true,
         "checkJs": true,
         "strict": true,
         "outDir": "./dist/tsc/",
-        "noEmit": true,
-        "lib": [ "dom", "esnext" ]
+        "maxNodeModuleJsDepth": 5,
+        "lib": [ "DOM", "esnext" ],
+        "module": "esnext",
+        "noEmit": true
     },
-    "files": [ "./src/display.js" ]
+    "files": [ "./main.js" ]
 }

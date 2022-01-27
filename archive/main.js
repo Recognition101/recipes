@@ -1,4 +1,4 @@
-import { select, addColumnSpans } from "./lib.js";
+import { select, addColumnSpans, findText } from './lib.js';
 
 // ---- EVENT HANDLING AND SETUP ----
 
@@ -18,7 +18,3 @@ document.addEventListener('click', ev => {
 
 select('.recipe-toggle + .recipe').forEach(el => el.classList.add('hidden'));
 select('.grid').forEach(el => addColumnSpans(el));
-
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./cache-worker.js', { scope: './' });
-}

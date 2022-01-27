@@ -1,4 +1,4 @@
-body {
+html {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
                  "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
                  sans-serif;
@@ -14,7 +14,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    html {
         --color-text: rgb(255, 255, 255);
         --color-border: rgb(0, 0, 0);
         --color-recipe-border: rgb(27, 173, 248);
@@ -25,25 +25,41 @@ body {
 }
 
 /* ---------- GRID OF BUTTONS ---------- */
-
-body {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-flow: row dense;
-    gap: 20px;
-
+html {
     font-size: 16px;
     color: var(--color-text);
     background-color: var(--color-background);
 }
 
-body h1 {
-    grid-column: 1 / -1;
+h1 {
     font-size: 2rem;
 }
 
-body h2 {
+h2 {
     color: var(--color-text);
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    max-width: 300px;
+}
+
+.controls input,
+.controls select {
+    font-size: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.2rem;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: row dense;
+    gap: 20px;
 }
 
 .recipe-toggle {
@@ -73,7 +89,7 @@ body h2 {
 }
 
 @media (max-width: 640px) {
-    body {
+    .recipes {
         font-size: 10px;
         gap: 10px;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
