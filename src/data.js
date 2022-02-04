@@ -7575,5 +7575,35 @@ export const recipes = [
                 step: 'Cut skin/pith away, cut into irregular wedges'
             }
         ]
+    },
+    {
+        title: 'Stir-Fried Garlic Green Beans (4 servings)',
+        image: './images/garlic-green-beans.jpg',
+        url: 'https://cooking.nytimes.com/recipes/1019217-stir-fried-garlic-green-beans',
+        ingredients: [
+            '1 lb green beans, trimmed',
+            'Salt (to taste)',
+            '1 Tbsp soy sauce',
+            '1 Tbsp chinese rice wine or dry sherry',
+            '1 Tbsp minced garlic',
+            '1 Tbsp minced fresh ginger',
+            '1/4 tsp red pepper flakes',
+            '1 Tbsp peanut or canola oil'
+        ],
+        steps: [
+            {
+                range: [ 'beans', 'salt' ],
+                step: 'Boil water, season w/S&amp;P, add beans. Boil 1m, drain/rinse, dry w/towel.'
+            }, {
+                range: [ 'soy', 'wine' ],
+                step: 'Combine'
+            }, {
+                range: [ 'garlic', 'pepper' ],
+                step: 'Combine'
+            }, {
+                range: [ 0, -1 ],
+                step: 'Heat 14&quot; wok w/high-heated oil, swirl, add garlic/ginger 10s, toss, add soy/wine, fry 1-2m.'
+            }
+        ]
     }
 ];
