@@ -7605,5 +7605,118 @@ export const recipes = [
                 step: 'Heat 14&quot; wok w/high-heated oil, swirl, add garlic/ginger 10s, toss, add soy/wine, fry 1-2m.'
             }
         ]
+    },
+    {
+        title: 'Sheet Pan Chow Mein (4 Servings)',
+        image: './images/sheet-pan-chow-mein.jpg',
+        url: 'https://www.washingtonpost.com/food/2022/01/12/sheet-pan-chow-mein-recipe/',
+        ingredients: [
+            '1 bell pepper, thinly sliced',
+            '1 carrot, scrubbed, thinly diagonally sliced',
+            '1 broccoli head, cut to florets',
+            '1 Tbsp toasted sesame oil',
+            'Splash Olive Oil',
+            'Fine salt',
+            '9 oz dried thin egg noodles',
+            '8.8 oz can cut baby corn, drained',
+            '5 oz asparagus, trimmed, cut into 2" pieces',
+            '1 scallion, thinly sliced',
+            'Handful fresh cilantro leaves',
+            '2 Tbsp toasted white sesame seeds',
+            '1 Tbsp toasted sesame oil',
+            '1/4c soy sauce',
+            '1 Tbsp vegetarian stir-fry sauce (optional)',
+            '1/4 tsp ground white pepper',
+            '1 sm garlic clove, minced/grated'
+        ],
+        steps: [
+            {
+                range: ['bell pepper', 'salt'],
+                step: 'Toss on pan, cook <b>400&deg;</b> 10m'
+            }, {
+                range: ['egg noodles'],
+                step: 'Cook until al dente, 4-5m'
+            }, {
+                range: [-5, -1],
+                step: 'Whisk together'
+            }, {
+                range: ['bell pepper', 'asparagus'],
+                step: 'Move veggies to side of pan, add all to other side. Roast 15-18m.'
+            }, {
+                range: [0, -1],
+                step: 'Top with sauce, scatter scallion / cilantro / sesame seeds on top.'
+            }
+        ]
+    },
+    {
+        title: 'Green Chile Shrimp Scampi With Spaghetti (4 servings)',
+        image: 'images/green-chile-shrimp-scampi.jpg',
+        url: 'https://www.bonappetit.com/recipe/green-chile-shrimp-scampi-with-spaghetti',
+        ingredients: [
+            '10 oz spaghetti',
+            'Salt',
+            '1 lb shrimp, peeled, deveined, tails on',
+            'Salt',
+            '2 Tbsp olive oil',
+            '2 Tbsp extra olive oil',
+            '1 jalapeno, seeds (maybe) removed, thinly sliced',
+            '4 garlic cloves, thinly sliced',
+            '3 4oz cans diced green chiles',
+            'Salt and freshly ground black pepper',
+            '1/3c fresh lemon juice',
+            '2 tsp finely grated lemon zest',
+            '6 Tbsp unsalted butter',
+            'Chopped Parsley',
+            'Extra Lemon Zest'
+        ],
+        steps: [
+            {
+                range: [ 'spaghetti', 'salt' ],
+                step: 'Cook, drain, reserve 1/4 c pasta water'
+            }, {
+                range: [ 'shrimp', 'oil' ],
+                step: 'Pat dry, season w/salt, heat oil, cook 1m per side, remove'
+            }, {
+                range: [ 'extra olive oil', 'lemon juice' ],
+                step: 'Add oil to shrimp skillet,<br/>cook jalapeno/garlic 1m,<br/>add chiles/salt/pepper, cook 2m,<br/>Add juice, cook 1m'
+            }, {
+                range: [ 'spaghetti', 'butter' ],
+                step: 'Add all and pasta water, melt butter, cook 2m'
+            }, {
+                range: [ 0, -1 ],
+                step: 'Season w/salt and pepper, top w/parsley and zest'
+            }
+        ]
+    },
+    {
+        title: 'Roasted Roots With Green Salsa (4 servings)',
+        image: './images/roasted-roots-green-salsa.jpg',
+        url: 'https://www.bonappetit.com/recipe/roasted-root-vegetables-with-green-salsa',
+        ingredients: [
+            '3 med sweet potatoes (~2lb), scrubbed, cut to 1/2" wedges',
+            '8 sm carrots (w/tops) (~1lb), scrubbed',
+            '5 scallions, roots trimmed',
+            'Drizzle of Olive Oil',
+            'Salt and Pepper',
+            '1 Tbsp Olive Oil',
+            'Salt and Pepper',
+            '8 sm carrot tops, coarsely chopped (~1/2c)',
+            '8 oz tomatillos (~5), husks removed, rinsed, coarsely chopped (~2c)',
+            '1-2 green chiles (ex: serrano/jalapeno), finely chopped',
+            '1/4 c fresh lime juice',
+            'Cotija cheese, ricotta salata, or feta'
+        ],
+        steps: [
+            {
+                range: [ 'potatoes', 'pepper' ],
+                step: 'Toss on pan, roast <b>450&deg;</b> 15-25m (to brown)'
+            }, {
+                range: [ '1 tbsp olive oil', 'lime juice' ],
+                step: 'Toss in bowl'
+            }, {
+                range: [ 0, -1 ],
+                step: 'Cut charred scallion to sm pieces, add to salsa, stir. Serve: Potatoes/carrots, topped w/salsa and cheese.'
+            }
+        ]
     }
 ];
