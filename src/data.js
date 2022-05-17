@@ -7718,5 +7718,341 @@ export const recipes = [
                 step: 'Cut charred scallion to sm pieces, add to salsa, stir. Serve: Potatoes/carrots, topped w/salsa and cheese.'
             }
         ]
+    },
+    {
+        title: 'Red Lentil Soup With Preserved Lemon and Crispy Garlic (4-6 servings)',
+        image: 'images/lentil-soup-lemon-garlic.jpg',
+        url: 'https://www.bonappetit.com/recipe/red-lentil-soup-with-preserved-lemon',
+        ingredients: [
+            '2 Tbsp extra-virgin olive oil',
+            '2 med onions, chopped',
+            '4 garlic cloves, finely chopped',
+            '2" piece ginger, scrubbed, finely chopped',
+            '2 tsp ground cumin',
+            '0.75 tsp ground turmeric',
+            'Ground black pepper',
+            '0.5 preserved lemon, rinsed, seeds removed, finely chopped',
+            '3 Tbsp double-concentrated tomato paste',
+            '8c veg or chicken broth',
+            '2c red lentils, rinsed',
+            '2 Tbsp olive oil',
+            '4 garlic cloves, thinly sliced',
+            'Kosher salt',
+            '1 tsp Aleppo-style pepper',
+            '1c torn mixed tender herbs (basil, dill, cilantro, and/or parsley)',
+            '1/2 preserved lemon, rinsed, seeds removed, finely chopped'
+        ],
+        steps: [
+            {
+                range: ['olive oil', 'ginger'],
+                step: 'Heat oil, add, stir, cook 6-8m'
+            }, {
+                range: ['olive oil', 'paste'],
+                step: 'Add all, stir to coat, heat until darkened (4m)'
+            }, {
+                range: ['olive oil', 'lentils'],
+                step: 'Add, boil, med-low heat, partially cover, simmer 35-45m.'
+            }, {
+                range: ['2 Tbsp olive oil', 'aleppo'],
+                step: 'Heat oil, fry garlic 3m, remove garlic (but not oil), season garlic w/pepper'
+            }, {
+                range: ['olive oil', -1],
+                step: 'Add herbs, lemon, top w/garlic chips and drizzle oil'
+            }
+        ]
+    },
+    {
+        title: 'Buttered Potatoes With Salted Lemon (4 servings)',
+        image: 'images/potato-lemon.jpg',
+        url: 'https://www.bonappetit.com/recipe/buttered-potatoes-with-salted-lemon',
+        ingredients: [
+            '2 lb small waxy potatoes',
+            'Kosher salt',
+            '1 preserved lemon, seeds removed, finely shopped + 2 Tbsp+ brine',
+            '1/2c (1 stick) butter, cut to pieces',
+            '1 sm bunch chives / 3 scallions, thinly silced',
+            '1c coarsely chopped dill',
+            'Freshly ground black pepper'
+        ],
+        steps: [
+            {
+                range: ['potatoes', 'salt'],
+                step: 'Boil salted water, add potatoes for 10-15m. Drain, cool 10m. Crush potatoes w/hands, transfer to bowl.'
+            }, {
+                range: ['potatoes', 'black pepper'],
+                step: 'Toss all together in a bowl.'
+            }
+        ]
+    },
+    {
+        title: 'Big Shell With Spicy Lamb Sausage and Pistachios (4 servings)',
+        image: 'images/shells-lamb-pistachios.jpg',
+        url: 'https://www.bonappetit.com/recipe/big-shells-with-spicy-lamb-sausage-and-pistachios',
+        ingredients: [
+            '3 Tbsp olive oil',
+            '1 lb spicy lamb / hot italian pork sausage (casings removed)',
+            '1 bunch broccoli rabe, stems trimmed/removed, rest coarsley chopped',
+            'Kosher salt',
+            '4 garlic cloves, thinly sliced',
+            'Freshly ground black pepper',
+            '12 oz jumbo shells or paccheri (Cook 1m less than package instructions, drain, reserve 1.5c liquid)',
+            '4 Tbsp unsalted butter, cut',
+            '1 tsp finely grated lemon zest',
+            '2 Tbsp fresh lemon juice',
+            '1/3c coarsely chopped raw pistachios',
+            'Finely grated Parmesan (for serving)'
+        ],
+        steps: [
+            {
+                range: ['oil', 'lamb'],
+                step: 'Add golf-ball sized clumps to med-high oiled dutch oven. Cook to golden, 4m each. Remove each to plate. Leave at least 2 Tbsp oil in pan.'
+            }, {
+                range: ['oil', 'black pepper'],
+                step: 'Add garlic, cook 2m, add broccoli (season w/S&amp;P) 4m (to wilted). Return sausage to pot, break up.'
+            }, {
+                range: ['oil', 'butter'],
+                step: 'Add, toss, add 3/4c pasta cooking liquid (more if needed slowly), cook 3m.'
+            }, {
+                range: [0, -1],
+                step: 'Remove from heat, add lemon zest, juice, toss. Top w/pistachios &amp; Parmesan'
+            }
+        ]
+    },
+    {
+        title: 'Fried Lemon and Radish Salad (6 servings)',
+        image: 'images/lemon-radish-salad.jpg',
+        url: 'https://www.bonappetit.com/recipe/fried-lemon-and-radish-salad',
+        ingredients: [
+            '2 med. shallots, thinly sliced',
+            '1/4c sherry vinegar or red wine vinegar',
+            '2 Tbsp fresh lemon juice',
+            '1 Tbsp + 1.5 tsp finely chopped drained capers',
+            '1 Tbsp dijon mustard',
+            '1 tsp honey',
+            '3/4c olive oil',
+            'Salt and Ground Pepper',
+            '1/2c raw pistachios (Toast 4m, coarsely chop.)',
+            '1 lg lemon',
+            'Salt',
+            '1/4c olive oil',
+            'Flaky sea salt',
+            '3 oz tender salad greens',
+            '2c coarsely chopped parsley leaves w/tender stems',
+            '1c mint leaves, torn if large',
+            '1 bunch red radishes, trimmed, thinly sliced'
+        ],
+        steps: [
+            {
+                range: ['shallots', 'ground pepper'],
+                step: 'Whisk all but oil/S&amp;P, wait 10m-1hr, whisk the rest. Store up to 2 days in fridge.'
+            }, {
+                range: ['lg lemon', 'salt'],
+                step: 'Thinly slice, remove seeds, cook slices in med saucepan of boiling salted water 2m, remove, pat dry.'
+            }, {
+                range: ['lg lemon', 'flaky sea salt'],
+                step: 'Heat oil, fry each slice 5m, move to towel, add sea salt. Set a few aside, chop the rest.'
+            }, {
+                range: [0, -1],
+                step: 'Add greens, some dressing, chopped lemon, toss. Top w/pistachios and lemon slices. Serve remaining dressing on side.'
+            }
+        ]
+    },
+    {
+        title: 'Charred Asparagus and Dates with Goat Cheese (4 servings)',
+        image: 'images/asparagus-dates.jpg',
+        url: 'https://www.bonappetit.com/recipe/charred-asparagus-and-dates-with-goat-cheese',
+        ingredients: [
+            '2 watermelon radshes or 3 red radishes, trimmed, thinly sliced',
+            'Zest and juice of 1 lemon',
+            '1/2 tsp salt',
+            '1 Tbsp olive oil',
+            '1 bunch asparagus (~1lb), trimmed',
+            '1 tsp black pepper',
+            '1/4 tsp crushed red pepper flakes',
+            '1 Tbsp olive oil (remaining)',
+            '8 Medjool dates, pitted, halved lengthwise',
+            '3 oz fresh goat cheese',
+            '2 Tbsp coarsely chopped mint'
+        ],
+        steps: [
+            {
+                range: ['radishes', 'salt'],
+                step: 'Toss, set aside.'
+            }, {
+                range: ['oil', 'red pepper flakes'],
+                step: 'Cook in single layer (batches) to char unerside (~2m per asparagus), shake, continue (4m). Top w/seasoning, transfer to plate.'
+            },  {
+                range: ['(remaining)', 'dates'],
+                step: 'Cook in same pan after asparagus, until charred (~3m).'
+            }, {
+                range: [0, -1],
+                step: 'Top asparagus w/dates, crumbled cheese, mint, radishes, drizzle oil and liquid from radish bowl.'
+            }
+        ]
+    },
+    {
+        title: 'Gochujang-Sesame Noodles (4 servings)',
+        image: 'images/gochujang-sesame-noodles.jpg',
+        url: 'https://www.bonappetit.com/recipe/gochujang-sesame-noodles',
+        ingredients: [
+            '8-10oz fresh/dried wheat noodles (lo mein/udon/ramen/etc)',
+            'Kosher salt',
+            '1/4c gochujang',
+            '3 Tbsp soy sauce',
+            '2 Tbsp light or dark brown sugar',
+            '2 Tbsp tahini',
+            '2 tsp toasted sesame oil',
+            '2 Tbsp water',
+            '2 Tbsp veg oil',
+            '1 bunch broccoli rabe, coarsely choppd',
+            '4 garlic cloves, finely chopped',
+            'Salt and Black Pepper',
+            'Handful torn basil leaves, plus sprigs for serving',
+            'Toasted sesame seeds and lime wedges (for serving)'
+        ],
+        steps: [
+            {
+                range: ['noodles', 'salt'],
+                step: 'Cook to package, drain and rinse.'
+            }, {
+                range: ['gochujang', 'water'],
+                step: 'Whisk, set aside.'
+            }, {
+                range: ['veg oil', 'pepper'],
+                step: 'Heat oil, fry all ~2m'
+            }, {
+                range: [0, -1],
+                step: 'Add sauce, cook to thicken (~2m), add noodles, cook ~1m, top w/sesame seeds, basil, lime'
+            }
+        ]
+    },
+    {
+        title: 'Stir-Fried Udon Noodles with Pork and Scallions (4 servings)',
+        image: 'images/udon-pork-scallions.jpg',
+        url: 'https://www.bonappetit.com/recipe/stir-fried-udon-with-pork',
+        ingredients: [
+            '1 Tbsp veg oil',
+            '4c coarsely chopped green cabbage (from 1/4 med head)',
+            '2 7oz package instant udon noodles, flavor packs discarded',
+            '2 tsp toasted sesame oil',
+            '1 Tbsp veg oil',
+            '8 oz ground pork',
+            '5 scallions, white/green parts coarsely chopped, dark-green parts thinly sliced',
+            '2 tsp finely grated fresh ginger (from 1" knob)',
+            '1 tsp crushed red pepper flakes',
+            '1/3c mirin',
+            '1/3c soy sauce',
+            '1 Tbsp toasted sesame seeds, plus more for serving'
+        ],
+        steps: [
+            {
+                range: ['oil', 'cabbage'],
+                step: 'Heat oil, cook med-high ~4m (to browned), cook on low ~4m (to tender), remove.'
+            }, {
+                range: ['oil', 'sesame oil'],
+                step: 'Add noodles to pot w/6c boiling water. Sit 1m. Stir, drain, add back to pot and toss w/oil. Add cabbages.'
+            }, {
+                range: [4, 'red pepper'],
+                step: 'Heat oil med-high, add pork, spread evenly, cook UNTOUCHED ~3m. Break up, cook until no pink. Add whites of scallions, ginger, pepper, cook ~1m.'
+            }, {
+                range: [0, -1],
+                step: 'Add all (but sesame seeds), toss, cook ~45s. Remove from heat, add scallion greens and sesame seeds, mix.'
+            }
+        ]
+    },
+    {
+        title: 'Salmon (From Frozen) (2 Servings)',
+        image: 'images/frozen-salmon.jpg',
+        url: 'https://www.foodnetwork.com/how-to/packages/food-network-essentials/how-to-cook-salmon-from-frozen',
+        ingredients: [
+            '2 Frozen Salmon filets',
+            'Spray veg oil',
+            'Salt and Pepper',
+            'Lemon Juice',
+            '4 Lemon slices'
+        ],
+        steps: [
+            {
+                range: ['salmon', 'veg'],
+                step: 'Add foil to smallest pan. Spray foil w/oil. Add salmon. Heat <b>450&deg;F</b> for 8m.'
+            }, {
+                range: ['salmon', -1],
+                step: 'Remove from oven, spray salmon w/oil. Drip some lemon juice on each, top w/S&amp;P. Add 2 lemon slices per filet. Put back in oven 12m.'
+            }
+        ]
+    },
+    {
+        title: 'Kimchi Fried Rice With Broccoli (4 servings)',
+        image: 'images/kimchi-fried-rice.jpg',
+        url: 'https://www.bonappetit.com/recipe/kimchi-fried-rice-with-broccoli',
+        ingredients: [
+            '1 lg head of broccoli (~1lb): chopped 1" florets, 1" stem coins.',
+            '1 Tbsp veg oil',
+            'Salt',
+            '6 scallions: dark greens (1" pieces)',
+            '6 scallions: whites (thinly sliced)',
+            '1c (packed) Napa cabbage kimchi (+serving) (squeezed dry, coarsely chopped)',
+            '1 Tbsp veg oil',
+            '4 garlic cloves, finely chopped',
+            '2" piece ginger, scrubbed, finely chopped',
+            '4c chilled cooked rice (jasmine)',
+            '1 Tbsp veg oil',
+            '1 Tbsp toasted sesame oil',
+            '1/4c soy sauce/tamari (+serving)',
+            '4 lg eggs, fried',
+            'Sesame seeds (serving)',
+            'Freshly ground black pepper'
+        ],
+        steps: [
+            {
+                range: ['broccoli', 'scalions: dark'],
+                step: 'Heat med-high, add, cook unti char, ~5m, stir, cook ~1m. Transfer to plate.'
+            }, {
+                range: ['scallions: whites', 'ginger'],
+                step: 'Fry until aromatic, ~2m. Push to side of pan.'
+            }, {
+                range: ['scallions: whites', 'soy'],
+                step: 'Add to pan w/aromatics. Toss together, press into even layer. Cook, undisturbed, until crip, ~5m.'
+            }, {
+                range: [0, -1],
+                step: 'Add reserved broccoli mix, heat through, ~2m. Season w/salt. Top w/fried egg, sesame seeds, more kimchi, pepper. Season egg w/soy sauce.'
+            }
+        ]
+    },
+    {
+        title: 'Nutty Umami Noodles With Scallion Brown Butter and Snow Peas (4-6 servings)',
+        image: 'images/nutty-umami-noodles.jpg',
+        url: 'https://www.bonappetit.com/recipe/nutty-umami-noodles-with-scallion-brown-butter-and-snow-peas',
+        ingredients: [
+            '16oz fresh or dried wheat noodles (ex: lo mein, udon, ramen)',
+            '1/3c oyster sauce',
+            '1/3c+ soy sauce',
+            '1 Tbsp + 1.5tsp unseasoned rice vinegar',
+            '1 Tbsp sugar',
+            '1/2c (1 stick) unsalted butter',
+            '6 scallions: whites (thinly sliced)',
+            '4 garlic cloves (finely chopped)',
+            '8oz snow peas',
+            '3/4 tsp mild chile flakes (+serving)',
+            '6 scallions: dark greens (thinly slilced)'
+        ],
+        steps: [
+            {
+                range: ['noodles'],
+                step: 'Cook to package. Drain, reserve 1c liquid.'
+            }, {
+                range: ['oyster', 'sugar'],
+                step: 'Whisk, set aside'
+            }, {
+                range: ['butter', 'scallions: whites'],
+                step: 'Cook on med-high until browning, ~4m'
+            }, {
+                range: ['butter', 'chile flakes'],
+                step: 'Add all, cook til butter is amber, ~1m'
+            }, {
+                range: [0, -1],
+                step: 'Combine (except scallion greens), including 1/4c noodle liquid, cook, tossing, add more liquid if needed, ~1m. Top w/scallion tops and chile flakes.'
+            }
+        ]
     }
 ];
