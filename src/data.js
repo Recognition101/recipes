@@ -1083,7 +1083,7 @@ export const recipes = [
                 step: 'Squeeze chorizo out into pan, saute and break up until cooked'
             }, {
                 range: [ 0, 'chicken broth' ],
-                step: 'Pour off grease, add, stir until combined.<br/><br/>Add lid to skillet, high heat until boiling<br/><br/>Immediately low heat, simmer for 30min<br><br>'
+                step: 'Pour off grease, add, stir until combined.<br/><br/>Add lid to skillet, high heat until boiling<br/><br/>Immediately very low heat, simmer for 20min<br><br>'
             }, {
                 range: [ 0, 'shredded cheese' ],
                 step: 'Add cheese, put lid back on for 1min (melt cheese).'
@@ -8052,6 +8052,63 @@ export const recipes = [
             }, {
                 range: [0, -1],
                 step: 'Combine (except scallion greens), including 1/4c noodle liquid, cook, tossing, add more liquid if needed, ~1m. Top w/scallion tops and chile flakes.'
+            }
+        ]
+    },
+    {
+        title: 'Instant Pot Chicken Cacciatore',
+        image: 'images/chicken-cacciatore.jpg',
+        url: 'https://www.washingtonpost.com/recipes/instant-pot-chicken-cacciatore/',
+        ingredients: [
+            '6 bone-in, skin-on chicken thighs (3-4lbs)',
+            'Salt',
+            'Black Pepper',
+            '2 Tbsp olive oil',
+            '1 med yellow onion, (thinly sliced)',
+            '1 yellow/red bell pepper (thinly sliced)',
+            '2 cloves garlic, thinly sliced',
+            '1/3c dry white wine (or low-sodium broth)',
+            '14.5oz can whole peeled tomatoes (coarsely chopped)'
+        ],
+        steps: [
+            {
+                range: ['chicken', 'oil'],
+                step: 'Pat dry, season both sides. SAUTE oil 3m, cook chicken skin-down to brown (5-7m, in batches)'
+            }, {
+                range: ['chicken', 'tomatoes'],
+                step: 'Remove chicken, stir in onions, cook 5m. Add bell pepper & garlic, cook 1-2m. Stir in wine, return chicken (skin up), top w/tomatoes. Cook high-pressure 9m, 0m NR. Remove chicken, maybe SAUTE sauce to thicken, add S&P. Top chicken w/sauce.'
+            }
+        ]
+    },
+    {
+        title: 'Chicken and Herb Salad with Nuoc Cham (4 Servings)',
+        image: 'images/chicken-herb-salad-nuoc-cham.jpg',
+        url: 'https://cooking.nytimes.com/recipes/1022445-chicken-and-herb-salad-with-nuoc-cham',
+        ingredients: [
+            '2 Tbsp sugar',
+            '1 garlic clove (minced)',
+            '1 bird\'s eye chile, minced w/seeds',
+            '1/4c lime juice (2 limes)',
+            '3 Tbsp fish sauce',
+            '3c rotisserie chicken (chopped)',
+            '2c red/green cabbage (thinly slice)',
+            '1 sm English cucumber (thinly slice)',
+            '1 med bell pepper (thinly sliced)',
+            '1.5c arugula (or other)',
+            '1c Thai basil leaves',
+            '1c mint leaves',
+            '1/2c fried shallots/onions'
+        ],
+        steps: [
+            {
+                range: ['sugar', 'fish sauce'],
+                step: 'In bowl, whisk sugar + water. Add remaining, stir.'
+            }, { 
+                range: ['chicken', 'mint leaves'],
+                step: 'Mix in large bowl'
+            }, {
+                range: [0, -1],
+                step: 'Toss to coat, garnish w/shallots'
             }
         ]
     }
