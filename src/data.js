@@ -6943,7 +6943,7 @@ export const recipes = [
             '2 tsp oyster sauce',
             '2 Tbsp water',
             'Oil (little bit)',
-            '275g Chinese/Japanese eggplant (1 lg or 2 sm),<br/><br/>halved lengthwise, sliced diagonally 1/2" thick',
+            '275g Chinese/Japanese eggplant (1 lg or 2 sm), halved lengthwise, sliced diagonally 1/2" thick',
             'Oil (bit)',
             'Red Thai chilies (at least 3 lg, seeds removed)',
             '4 cloves garlic',
@@ -8109,6 +8109,125 @@ export const recipes = [
             }, {
                 range: [0, -1],
                 step: 'Toss to coat, garnish w/shallots'
+            }
+        ]
+    },
+    {
+        title: 'Jammy Onion and Miso Pasta (4 Servings)',
+        image: 'images/jammy-onion-miso-pasta.jpg',
+        url: 'https://www.bonappetit.com/recipe/jammy-onion-and-miso-pasta',
+        ingredients: [
+            '2 Tbsp olive oil',
+            '2 Tbsp butter',
+            '2 lg onions, thinly sliced',
+            'salt',
+            '4 garlic cloves, thinly sliced',
+            '1 Tbsp white miso',
+            '1c beef/chicken broth (or water)',
+            'Ground black pepper',
+            '12oz spaghetti, cooked al dente (1m less than package says)',
+            '1/2c pasta cooking liquid',
+            '1 Tbsp butter',
+            '2.5oz Parmesan (fine grated)',
+            '0.25c 1.5"-long chives'
+        ],
+        steps: [
+            {
+                range: ['oil', 'salt'],
+                step: 'Heat oil/butter, add onions/salt, cook 10-14m'
+            }, {
+                range: ['oil', 'garlic'],
+                step: 'Cook 1m'
+            }, {
+                range: ['oil', 'miso'],
+                step: 'Add, cook until brown (1-2m)'
+            }, {
+                range: ['oil', 'pepper'],
+                step: 'Add, cook until miso dissolves (1-2m), add pepper, heat on low'
+            }, {
+                range: [0, -1],
+                step: 'Combine, cook 2m, top with chives, more parmesan, salt+pepper'
+            }
+        ]
+    },
+    {
+        title: 'Cheesy Pork and Tomatillo Skillet (4 Servings)',
+        image: 'images/cheesy-pork-tomatillo-skillet.jpg',
+        url: 'https://www.bonappetit.com/recipe/cheesy-pork-tomatillo-skillet',
+        ingredients: [
+            '1lb ground pork',
+            '1tsp salt',
+            '1 tsp ground cumin',
+            '1 tsp smoked paprika',
+            '2 Tbsp olive oil',
+            '1 sm red onion, thin-sliced',
+            '4 garlic cloves, thin-sliced',
+            '1 lg poblano chile, ribs/seeds removed, thin-sliced',
+            '3 med tomatillos, husks removed, rinsed, coarse-chopped',
+            '2 4oz cans diced green chiles',
+            '1c water',
+            '8 oz pepper jack cheese, coarse-grated',
+            'cliantro leaves and tortilla chils (for topping/serving)'
+        ],
+        steps: [
+            {
+                range: ['pork', 'paprika'],
+                step: 'Mix in bowl w/hands'
+            }, {
+                range: ['pork', 'oil'],
+                step: 'Cook 3m undisturbed (browning bottom). Stir while cooking 2m more. Remove meat.'
+            }, {
+                range: ['pork', 'garlic'],
+                step: 'Cook in empty pan 3m'
+            }, {
+                range: ['pork', 'tomatillos'],
+                step: 'Add, Cook 1m'
+            }, {
+                range: ['pork', 'water'],
+                step: 'Add, stir up brown bits, cook 7-9m (until soft). Remove pan from heat.'
+            }, {
+                range: [0, -1],
+                step: 'Add all cooked to skillet, top w/cheese, broil 3m. Top w/cilantro, serve w/chips.'
+            }
+        ]
+    },
+    {
+        title: 'Stir-Fried Eggplant with Basil & Chiles (2 servings)',
+        image: 'images/fried-eggplant-basil-chiles.jpg',
+        url: 'https://www.bonappetit.com/recipe/stir-fried-eggplant-with-pork',
+        ingredients: [
+            '3 med Japanese/Chinese eggplants (~12oz)',
+            '2 Tbsp olive oil',
+            '1 Tbsp olive oil',
+            '1/4 lb ground pork/chicken/tempeh/tofu',
+            '3 garlic cloves, thin-sliced',
+            '1 tsp toasted sesame seeds',
+            '1/2c basil leaves + more for serving',
+            '2 red chiles (cayenne, fresno, jalapeno), fine-chopped',
+            '1 Tbsp honey',
+            'Pinch salt',
+            '2 Tbsp unseasoned rice vinegar',
+            '2 tsp tamari/soy sauce'
+        ],
+        steps: [
+            {
+                range: ['chiles', 'tamari'],
+                step: 'mix'
+            }, {
+                range: ['eggplants', 'oil'],
+                step: 'Slice into 3" rounds, quarter-lengthwise, cook 6-8m, move to plate'
+            }, {
+                range: ['eggplants', 'pork'],
+                step: 'Add extra oil to pan, cook pork 2m'
+            }, {
+                range: ['eggplants', 'sesame'],
+                step: 'Add, cook 1m'
+            }, {
+                range: ['eggplants', 'basil'],
+                step: 'Add, cook 2-3 min to wilt'
+            }, {
+                range: ['eggplants', 'tamari'],
+                step: 'Add eggplant back, add 1/2 chile sauce, cook 1-2m. Turn off heat, add remaining sauce, top w/more basil.'
             }
         ]
     }
