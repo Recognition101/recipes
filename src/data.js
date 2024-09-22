@@ -8230,5 +8230,171 @@ export const recipes = [
                 step: 'Add eggplant back, add 1/2 chile sauce, cook 1-2m. Turn off heat, add remaining sauce, top w/more basil.'
             }
         ]
+    }, {
+        title: 'One-Pot Salmon and Shiitake Rice (4 Servings)',
+        image: 'images/one-pot-salmon-shiitake.jpg',
+        url: 'https://www.bonappetit.com/recipe/one-pot-salmon-and-shiitake-rice',
+        ingredients: [
+            '2c white rice (rinsed)',
+            '1/4c quinoa',
+            '1 Tbsp mirin or sake',
+            '2.5c water',
+            '2 tsp soy sauce',
+            '5oz Shiitake mushrooms (thin sliced)',
+            '4-6oz skinless salmon fillets',
+            'Salt',
+            '2 Tbsp rice vinegar',
+            '1 Tbsp toasted sesame oil',
+            '2.5 scallions (thin sliced)',
+            '3 Tbsp soy sauce',
+            '2.5 scallions (thin sliced)'
+        ],
+        steps: [
+            {
+                range: ['rice', 'soy'],
+                step: 'Stir in rice cooker'
+            }, {
+                range: ['rice', 'salt'],
+                step: 'Add mushrooms on top, then salmon, season, ' +
+                    'make rice (5m heat / 15m simmer / 20m off heat w/lid on).'
+            }, {
+                range: ['rice vinegar', 'soy sauce'],
+                step: 'mix, set aside'
+            }, {
+                range: [0, -1],
+                step: 'Mix scallions into rice, serve w/dressing on side'
+            }
+        ]
+    }, {
+        title: 'Basil Fried Rice (4 Servings)',
+        image: 'images/basil-fried-rice-2024.jpg',
+        url: 'https://www.bonappetit.com/recipe/basil-fried-rice',
+        ingredients: [
+            '1 large bunch basil',
+            '4 lg eggs',
+            'Salt',
+            '2 Tbsp veg oil',
+            '3 garlic cloves, finely grated',
+            '2" ginger, finely grated',
+            '1 Fresno/serrano chile, finely chopped',
+            '1/3c crispy fried onions/shallots',
+            '3c chilled day-old rice',
+            '3 Tbsp soy sauce',
+            '2 Tbsp sesame oil'
+        ],
+        steps: [
+            {
+                range: ['basil'],
+                step: 'Pluck 2c leaves, chop 1 Tbsp stems'
+            }, {
+                range: ['basil', 'salt'],
+                step: 'Beat eggs, add salt and 1c leaves'
+            }, {
+                range: ['oil', 'crispy'],
+                step: 'Heat oil, mix all + basil stems, cook 1m'
+            }, {
+                range: ['oil', 'sesame oil'],
+                step: 'Add rice, cook 3m, Add sauce/oil, cook 2m'
+            }, {
+                range: [0, -1],
+                step: 'Add egg, cook 2m, add all remaining basil, serve'
+            }
+        ]
+    }, {
+        title: 'Five Spice Chicken (4 Servings)',
+        image: 'images/five-spice-chicken.jpg',
+        url: 'https://www.cooking-therapy.com/five-spice-chicken/',
+        ingredients: [
+            '2 lb chicken thighs',
+            '1/2 tsp salt',
+            '1 tsp five spice powder',
+            '1 tbsp fish sauce',
+            '1 tbsp rice wine vinegar',
+            '1 tbsp soy sauce',
+            '2 tsp coconut sugar',
+            '1 tbsp brandy (optional)',
+            '2 cloves garlic (minced)',
+            'Cucumbers (sliced)'
+        ],
+        steps: [
+            {
+                range: ['salt', 'garlic'],
+                step: 'Whisk together'
+            }, {
+                range: [0, 'garlic'],
+                step: 'Add all to bag, shake, marinate 15m. ' +
+                    'Sear chicken in pan on high, 5m. ' +
+                    'Bake at <b>400&deg;F</b> 30-35m (to internal temp 165&deg;F)'
+            }, {
+                range: [0, -1],
+                step: 'Serve on rice w/cucumbers.'
+            }
+        ]
+    }, {
+        title: 'The Amazing Pea Puree (4 Servings)',
+        image: 'images/amazing-pea-puree.jpg',
+        url: 'https://familymealblog.com/2014/04/02/the-amazing-pea-puree/',
+        ingredients: [
+            '6 cloves garlic, whole',
+            'salt',
+            '2.5c frozen peas',
+            '4 Tbsp butter',
+            'salt & pepper',
+            '1/4c heavy cream',
+        ],
+        steps: [
+            {
+                range: ['garlic', 'salt'],
+                step: 'Bring to boil water w/cloves, boil 5m'
+            }, {
+                range: [0, 'peas'],
+                step: 'Add Peas, Boil until tender, transfer peas and garlic to food processor'
+            }, {
+                range: [0, -1],
+                step: 'Add butter and S&amp;P, pulse to smooth, drizzle heavy cream while running'
+            }
+        ]
+    }, {
+        title: 'Elote-Style Corn Soup (4-6 servings)',
+        image: 'images/elote-style-corn-soup.jpg',
+        url: 'https://www.bonappetit.com/recipe/elote-style-corn-soup',
+        ingredients: [
+            '2 Tbsp olive oil',
+            '2 Tbsp unsalted butter',
+            '1/2 tsp chili powder',
+            '1 med. onion, finely chopped',
+            '5 garlic cloves, finely chopped',
+            'Ground pepper',
+            '1 lg potato, peeled, cut into 0.5" pieces',
+            '4c chicken broth',
+            '8oz fire-roasted frozen corn',
+            '1c whole milk',
+            '4oz fire-roasted frozen corn',
+            '2 tsp small salt (or 1.25 tsp large)',
+            'Crumbled cotija cheese',
+            'Cilantro (chopped)',
+            'Lime Wedges'
+        ],
+        steps: [
+            {
+                range: [0, 'butter'],
+                step: 'Heat to melt'
+            }, {
+                range: [0, 'pepper'],
+                step: 'Add chili powder, cook 30s, Add onion/garlic, cook ~3m. Add S&amp;P.'
+            }, {
+                range: [0, 'frozen corn'],
+                step: 'Add all, bring to boil, simmer (partially covered) 12-14m'
+            }, {
+                range: [0, 'milk'],
+                step: 'Add, ladle half soup into blender, blend to smooth, put back.'
+            }, {
+                range: [0, 'small salt'],
+                step: 'Add corn/salt, season w/pepper, heat 5m'
+            }, {
+                range: [0, -1],
+                step: 'Top w/cheese &amp; cilantro, serve w/lime'
+            }
+        ]
     }
 ];
