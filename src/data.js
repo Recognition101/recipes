@@ -8396,5 +8396,42 @@ export const recipes = [
                 step: 'Top w/cheese &amp; cilantro, serve w/lime'
             }
         ]
+    }, {
+        title: 'Shrimp Scampi with Linguini (4-6 servings)',
+        image: 'images/shrimp-scampi-with-linguini.jpg',
+        url: 'https://www.foodnetwork.com/recipes/tyler-florence/shrimp-scampi-with-linguini-recipe2-1946075',
+        ingredients: [
+            '1lb linguini',
+            'salt',
+            '2 Tbsp butter',
+            '2 Tbsp olive oil',
+            '1 lg shallot, finely diced',
+            '5 cloves garlic, sliced',
+            'Pinch red pepper flakes (optional)',
+            '20 lg shrimp (~1lb), peeled/tail on, seasoned w/S&P',
+            '1/2c dry white wine',
+            '1 lemon, juiced',
+            '2 Tbsp butter',
+            '2 Tbsp olive oil',
+            '1/4c finely chopped parsley'
+        ],
+        steps: [
+            {
+                range: [0, 'salt'],
+                step: 'Boil salted water, add linguini, cook 6-8m, reserve 1c water'
+            }, {
+                range: ['butter', 'flakes'],
+                step: 'Melt butter/oil, add all, cook 3-4m'
+            }, {
+                range: ['butter', 'shrimp'],
+                step: 'Add S&amp;P seasoned shrimp, cook to pink (2-3m), remove from pan'
+            }, {
+                range: ['butter', -2],
+                step: 'Add wine/juice, boil, add butter/oil, melt'
+            }, {
+                range: [0, -1],
+                step: 'Add all (including pasta water and parsley) to pan, season w/S&amp;P, heat, serve'
+            }
+        ]
     }
 ];
