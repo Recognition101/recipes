@@ -8433,5 +8433,42 @@ export const recipes = [
                 step: 'Add all (including pasta water and parsley) to pan, season w/S&amp;P, heat, serve'
             }
         ]
+    }, {
+        title: 'Spicy Korean Gochujang Beef Noodles (4 Servings)',
+        image: 'images/spicy-korean-gochujang-beef-noodles.jpg',
+        url: 'https://eatwithclarity.com/korean-gochujang-noodles/',
+        ingredients: [
+            '12oz soba rice noodles',
+            '2 Tbsp butter',
+            '1lb ground meat, cooked in skillet',
+            '1/4c soy sauce',
+            '1/4c gochujang paste',
+            '2 Tbsp coconut cream',
+            '2 tsp tomato paste',
+            '2 Tbsp water',
+            '2 Tbsp honey/brown sugar',
+            '1 Tbsp toasted sesame oil',
+            '1 Tbsp rice vinegar',
+            '2 tsp minced garlic',
+            '1 tsp fresh grated ginger',
+            '1/2 tsp red pepper flakes',
+            'Scallions, chopped',
+            'Sesame seeds'
+        ],
+        steps: [
+            {
+                range: [0, 'butter'],
+                step: 'Cook noodles by package, drain/rinse, add butter to prevent sticking'
+            }, {
+                range: ['soy', 'ginger'],
+                step: 'Whisk together, chunks are ok.'
+            }, {
+                range: [0, 'ginger'],
+                step: 'Add half sauce to noodles, toss, add meat and remaining sauce, toss, heat for a few minutes'
+            }, {
+                range: [0, -1],
+                step: 'Top w/red pepper, scallions, sesame seeds'
+            }
+        ]
     }
 ];
