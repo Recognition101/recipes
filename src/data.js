@@ -8470,5 +8470,22 @@ export const recipes = [
                 step: 'Top w/red pepper, scallions, sesame seeds'
             }
         ]
+    }, {
+        title: 'Cottage Cheese Banana Pudding (2 Servings)',
+        image: 'images/cottage-cheese-banana-pudding.jpg',
+        url: 'https://rachlmansfield.com/cottage-cheese-banana-pudding/',
+        ingredients: [
+            '2 cups cottage cheese',
+            '1 ripe banana',
+            '2 Tbsp maple syrup (more for sweeter)',
+            '1/2 tsp vanilla extract',
+            'Sprinkle of cinnamon',
+        ],
+        steps: [
+            {
+                range: [0, -1],
+                step: 'Blend all until creamy.'
+            }
+        ]
     }
 ];
