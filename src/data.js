@@ -8487,5 +8487,21 @@ export const recipes = [
                 step: 'Blend all until creamy.'
             }
         ]
+    }, {
+        title: 'Banana Pancakes',
+        image: 'images/banana-pancakes.jpg',
+        url: 'https://babyfoode.com/blog/banana-pancakes-for-baby/',
+        ingredients: [
+            '2 med banana (ripe)',
+            '2 lg eggs',
+            '4 Tbsp flour',
+            '1/2 tsp cinnamon (optional)'
+        ],
+        steps: [
+            {
+                range: [0, -1],
+                step: 'Mash bananas, mix all. Use 1 Tbsp batter per pancake in a buttered pan.'
+            }
+        ]
     }
 ];
