@@ -8503,5 +8503,118 @@ export const recipes = [
                 step: 'Mash bananas, mix all. Use 1 Tbsp batter per pancake in a buttered pan.'
             }
         ]
+    }, {
+        title: 'Creamy Coconut Curry Lentils With Spinach (4 Servings)',
+        image: 'images/coconut-curry-lentils.jpg',
+        url: 'https://www.budgetbytes.com/creamy-coconut-curry-lentils-with-spinach/',
+        ingredients: [
+            '2 Tbsp olive oil',
+            '2 cloves garlic',
+            '1 tsp grated ginger',
+            '1 sm yellow onion',
+            '1 Tbsp curry powder',
+            '1c brown lentils (dry)',
+            '2c vegetable broth',
+            '13oz can coconut milk',
+            '3c fresh baby spinach',
+            '4c cooked rice',
+            '1/4c chopped fresh cilantro'
+        ],
+        steps: [
+            {
+                range: ['garlic'],
+                step: 'Mince'
+            }, {
+                range: ['ginger'],
+                step: 'Grate'
+            }, {
+                range: ['onion'],
+                step: 'Dice'
+            }, {
+                range: [0, 'ginger'],
+                step: 'Saute on med 1m, until fragrant'
+            }, {
+                range: [0, 'curry'],
+                step: 'Add onion, saute to translucent, add powder, saute 1m'
+            }, {
+                range: [0, 'broth'],
+                step: 'Add, stir/scrape, top w/lid, heat med-high to boil, turn heat low, simmer 20m, occasional stirring'
+            }, {
+                range: [0, 'milk'],
+                step: 'Add, stir, heat med to simmer 10m, stirring often'
+            }, {
+                range: [0, -1],
+                step: 'Add spinach, stir to wilt, add salt if needed, serve over rice topped w/cilantro'
+            }
+        ]
+    }, {
+        
+        title: 'Brunswick Stew (6 Servings)',
+        image: 'images/brunswick-stew.jpg',
+        url: 'https://www.budgetbytes.com/brunswick-stew/',
+        ingredients: [
+            '1 Tbsp olive oil',
+            '1 yellow onion, diced',
+            '2 cloves garlic, minced',
+            '2 Tbsp tomato paste',
+            '1/2 tsp salt',
+            '1/4 tsp smoked paprika',
+            '1/4 tsp garlic powder',
+            '1/4 tsp black pepper',
+            '2 14.5 oz cans diced tomatoes',
+            '1c frozen corn kernels',
+            '1c frozen lima beans',
+            '1lb yukon gold potatoes, peeled/diced',
+            '1/2c BBQ sauce',
+            '4c cooked shredded chicken',
+            '3c chicken broth'
+        ],
+        steps: [
+            {
+                range: [0, 'garlic'],
+                step: 'Saute on med for few minutes',
+            }, {
+                range: [0, 'black pepper'],
+                step: 'Add, cook 30-45 seconds'
+            }, {
+                range: [0, -1],
+                step: 'Add, stir well, ring to boil, lower to med-low, simmer 20m. Cook extra 2-3m if potatoes not done. Eat w/parsley and bread.'
+            }
+        ]
+    }, {
+        title: 'Instant Pot Hamburger Helper (6 Servings)',
+        image: 'images/instant-pot-hamburger-helper.jpg',
+        url: 'https://amindfullmom.com/instant-pot-hamburger-helper/',
+        ingredients: [
+            '2 tsp olive oil',
+            '1lb ground meat',
+            '4c beef stock',
+            '1 Tbsp garlic powder',
+            '1 Tbsp onion powder',
+            '1 tsp paprika',
+            '1 tsp salt',
+            '1/2 tsp black pepper',
+            '1 Tbsp Worcestershire sauce',
+            '16oz elbow noodles',
+            '8oz tomato sauce'
+        ],
+        steps: [
+            {
+                range: [0, 'ground meat'],
+                step: 'Set to saute, heat oil 1m, add meat, break up and cook'
+            }, {
+                range: [0, 'stock'],
+                step: 'Add, deglaze',
+            }, {
+                range: [0, 'worcestershire'],
+                step: 'Add, stir well'
+            }, {
+                range: [0, 'noodles'],
+                step: 'Add, push gently into sauce, noodles just submerged'
+            }, {
+                range: [0, -1],
+                step: 'Add sauce on top - do not stir! Add lid, cook 3m on high, NR 5m. Remove lid, fluff.'
+            }
+        ]
     }
 ];
