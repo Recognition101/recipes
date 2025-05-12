@@ -8616,5 +8616,17 @@ export const recipes = [
                 step: 'Add sauce on top - do not stir! Add lid, cook 3m on high, NR 5m. Remove lid, fluff.'
             }
         ]
+    }, {
+        title: 'Boiled Eggs',
+        image: 'images/boiled-eggs.jpg',
+        url: 'https://www.allrecipes.com/article/how-to-boil-an-egg/',
+        ingredients: [
+            'Eggs',
+            'Water'
+        ],
+        steps: [{
+            range: [0, -1],
+            step: 'Add eggs to pot, cover with water, bring to boil, immediately remove from heat, cover, let sit <b>6m</b>'
+        }]
     }
 ];
