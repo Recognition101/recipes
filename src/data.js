@@ -8628,5 +8628,36 @@ export const recipes = [
             range: [0, -1],
             step: 'Add eggs to pot, cover with water, bring to boil, immediately remove from heat, cover, let sit <b>6m</b>'
         }]
+    }, {
+        title: 'Greek Turkey and Rice Skillet',
+        image: 'images/greek-turkey-rice-skillet.jpg',
+        url: 'https://www.budgetbytes.com/greek-turkey-rice-skillet/',
+        ingredients: [
+            '1 Tbsp olive oil',
+            '2 cloves garlic, minced',
+            '19 oz ground turkey',
+            '1 tsp dried oregano',
+            '1/4 tsp salt',
+            'Freshly cracked pepper',
+            '1c long grain white rice, uncooked',
+            '1/4 lb frozen cut leaf spinach',
+            '1/3c sun dried tomato halves (~7pc), sliced',
+            '1/2c kalamata olives, sliced',
+            '1.5c chicken broth',
+            'Handful fresh parsley',
+            'Lemon (sliced)',
+            'Lemon Zest (from lemon)',
+            '1oz feta'
+        ],
+        steps: [{
+            range: [0, 'pepper'],
+            step: 'Add oil + garlic, cook 1-2m, add all, cook 5m (until turkey is done)'
+        }, {
+            range: [0, 'broth'],
+            step: 'Add all, stir, add lid, med-high heat to boil, then turn down to low, simmer 15m. Stir, turn off heat, add lid, let sit 10m.'
+        }, {
+            range: [0, -1],
+            step: 'Top with lemon zest, feta, and parsley. Squeeze lemon slice over top.'
+        }]
     }
 ];
