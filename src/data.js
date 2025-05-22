@@ -8659,5 +8659,42 @@ export const recipes = [
             range: [0, -1],
             step: 'Top with lemon zest, feta, and parsley. Squeeze lemon slice over top.'
         }]
+    }, {
+        title: 'Red Beans and Rice',
+        url: 'https://damndelicious.net/2019/04/15/red-beans-and-rice/',
+        image: 'images/red-beans-rice.jpg',
+        ingredients: [
+            '1 Tbsp vegetable oil',
+            '12.8oz smoked andoulle sausage',
+            '1m sweet onion, diced',
+            '1 green bell pepper, diced',
+            '2 celery ribs, diced',
+            '2 Tbsp tomato paste',
+            '3 cloves garlic, minced',
+            '1.5 tsp Cajun seasoning',
+            '3 15oz cans small red beans/kidney beans, drained/rinsed',
+            '3c chicken stock',
+            '1 tsp hot sauce',
+            '1 bay leaf',
+            'Salt + Pepper, to taste',
+            '2 Tbsp chopped parsley leaves',
+            '1c Basmati Rice, cooked'
+        ],
+        steps: [{
+            range: [0, 2],
+            step: 'Thin-slice sausage, cook in batches, 3-4m (lightly browned), remove sausage'
+        },
+        {
+            range: [0, 'celery'],
+            step: 'Cook 3-4m'
+        },
+        {
+            range: [0, 'cajun'],
+            step: 'Cook 1m'
+        },
+        {
+            range: [0, -1],
+            step: 'Add all (and sausage) except parsley/rice, boil, cover, simmer 15m. Uncover, simmer to reduce (15m), mash beans w/spoon, add S&P. Serve topped w/rice and parsley'
+        }]
     }
 ];
