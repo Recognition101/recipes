@@ -8696,5 +8696,67 @@ export const recipes = [
             range: [0, -1],
             step: 'Add all (and sausage) except parsley/rice, boil, cover, simmer 15m. Uncover, simmer to reduce (15m), mash beans w/spoon, add S&P. Serve topped w/rice and parsley'
         }]
+    }, {
+        title: 'Chinese Chicken Salad',
+        url: 'https://www.eatyourselfskinny.com/chinese-chicken-salad/',
+        image: 'images/chinese-chicken-salad.jpg',
+        ingredients: [
+            '2c rotisserie chicken, shredded',
+            '2c romaine lettuce, thin chopped',
+            '2c napa cabbage, thin chopped',
+            '1c carrots, julienned/shredded',
+            '1/2c green onions, chopped',
+            '1/3c cilantro, chopped',
+            '1c mandarin oranges',
+            '1/3c sliced almonds',
+            'sesame seeds',
+            '3 Tbsp rice wine vinegar',
+            '2 Tbsp soy sauce',
+            '2 cloves garlic, minced',
+            '2 Tbsp honey',
+            '1 Tbsp ginger, grated',
+            '2 tsp sesame oil',
+            '3 Tbsp olive oil'
+        ],
+        steps: [
+            {
+                range: [0, 'almonds'],
+                step: 'Combine to make salad'
+            }, {
+                range: ['rice wine vinegar', -1],
+                step: 'Mix/shake to make dressing'
+            }, {
+                range: [0, -1],
+                step: 'Top salad with dressing and sesame seeds'
+            }
+        ]
+    }, {
+        title: 'Everyday Salad',
+        url: 'https://www.gimmesomeoven.com/everyday-salad-recipe/',
+        image: 'images/everyday-salad.jpg',
+        ingredients: [
+            '5oz spring greens mix',
+            '1/2 english cucumber, very thinly sliced',
+            '1/2 med. red onion, peeled/thinly sliced',
+            '1/2c toasted pine nuts',
+            '3 Tbsp olive oil',
+            '1 Tbsp freshly squeezed lemon juice',
+            '1 tsp dijon mustard',
+            '1 sm clove garlic, finely minced',
+            '1/2 tsp fine sea salt',
+            '1/4 tsp freshly cracked black pepper'
+        ],
+        steps: [
+            {
+                range: [0, 'pine nuts'],
+                step: 'Combine to make salad'
+            }, {
+                range: ['olive oil', -1],
+                step: 'Combine in jar to make dressing'
+            }, {
+                range: [0, -1],
+                step: 'Top salad w/dressing'
+            }
+        ]
     }
 ];
