@@ -8629,7 +8629,7 @@ export const recipes = [
             step: 'Add eggs to pot, cover with water, bring to boil, immediately remove from heat, cover, let sit <b>6m</b>'
         }]
     }, {
-        title: 'Greek Turkey and Rice Skillet',
+        title: 'Greek Turkey and Rice Skillet (4 Servings)',
         image: 'images/greek-turkey-rice-skillet.jpg',
         url: 'https://www.budgetbytes.com/greek-turkey-rice-skillet/',
         ingredients: [
@@ -8660,7 +8660,7 @@ export const recipes = [
             step: 'Top with lemon zest, feta, and parsley. Squeeze lemon slice over top.'
         }]
     }, {
-        title: 'Red Beans and Rice',
+        title: 'Red Beans and Rice (6 Servings)',
         url: 'https://damndelicious.net/2019/04/15/red-beans-and-rice/',
         image: 'images/red-beans-rice.jpg',
         ingredients: [
@@ -8697,7 +8697,7 @@ export const recipes = [
             step: 'Add all (and sausage) except parsley/rice, boil, cover, simmer 15m. Uncover, simmer to reduce (15m), mash beans w/spoon, add S&P. Serve topped w/rice and parsley'
         }]
     }, {
-        title: 'Chinese Chicken Salad',
+        title: 'Chinese Chicken Salad (6 Servings)',
         url: 'https://www.eatyourselfskinny.com/chinese-chicken-salad/',
         image: 'images/chinese-chicken-salad.jpg',
         ingredients: [
@@ -8731,7 +8731,7 @@ export const recipes = [
             }
         ]
     }, {
-        title: 'Everyday Salad',
+        title: 'Everyday Salad (4 Side Servings)',
         url: 'https://www.gimmesomeoven.com/everyday-salad-recipe/',
         image: 'images/everyday-salad.jpg',
         ingredients: [
