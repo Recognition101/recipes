@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 
-/** @type {Recipes.Recipe[]} */
+/** @type {import('./types').Recipe[]} */
 export const recipes = [
     {
         title: 'Chicken Parmesan',

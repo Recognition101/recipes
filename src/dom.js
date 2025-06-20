@@ -1,7 +1,22 @@
 /**
+ * @typedef {import('./types').Recipe} Recipe
+ * @typedef {import('./types').RecipeRow} RecipeRow
+ * @typedef {import('./types').Child} Child
+ * @typedef {import('./types').RecipeOptions} RecipeOptions
+ */
+/**
+ * @template T
+ * @typedef {import('./types').MaybeArray<T>} MaybeArray
+ */
+/**
+ * @template {keyof HTMLElementTagNameMap} T
+ * @typedef {import('./types').Attributes<T>} Attributes
+ */
+
+/**
  * Puts an element in an array if it is not already an array.
  * @template T the type of element to put into an array
- * @param {Recipes.MaybeArray<T>} x the object to convert
+ * @param {MaybeArray<T>} x the object to convert
  * @return {T[]} the `x` array, or an array containing `x` if it is not an array
  */
 const boxArray = x =>
@@ -45,8 +60,8 @@ export const select = (s, e=document.body) => Array.from(e.querySelectorAll(s));
  * Creates an HTML element, adding children and attributes if needed.
  * @template {keyof HTMLElementTagNameMap} T the tag name to create
  * @param {T} tag
- * @param {Recipes.Attributes<T>} attributes
- * @param {Recipes.MaybeArray<Recipes.Child>} children
+ * @param {Attributes<T>} attributes
+ * @param {MaybeArray<Child>} children
  */
 const h = (tag, attributes, children = [ ]) => {
     const dom = document.createElement(tag);
@@ -91,22 +106,52 @@ const h = (tag, attributes, children = [ ]) => {
 
 /**
  * Creates a recipe button for a given recipe.
- * @param {Recipes.Recipe} recipe the recipe to create DOM for
- * @return {HTMLElement} the recipe button
+ *
+ * @typedef {Object} GetButtonStructure
+ * @prop {HTMLInputElement} domFavorite the favorite check box
+ * @prop {HTMLButtonElement} domButton the button itself
+ *
+ * @param {Recipe} recipe the recipe to create DOM for
+ * @param {number} id the id for this button
+ * @param {boolean} isFavorite true if the recipe is a favorite
+ * @return {GetButtonStructure} the recipe button view structure
  */
-export const getButton = recipe => {
+export const getButton = (recipe, id, isFavorite) => {
     const { title, image, url } = recipe;
+    const domFavorite = h('input', {
+        type: 'checkbox',
+        name: 'recipe-favorite',
+        checked: isFavorite || undefined,
+        // @ts-ignore
+        switch: ''
+    });
 
-    return h('button', { className: 'recipe-toggle' }, [
+    const domButton = h('button', {
+        className: 'recipe-toggle',
+        dataset: { id: id.toString() }
+    }, [
         h('h2', { }, title),
         h('img', { src: image }),
-        h('a', { href: url }, '(link)')
+        h('div', { className: 'recipe-options' }, [
+            h('a', { href: url }, '\u{1F517}'),
+            h('label', {}, [ '\u{2605}', domFavorite ]),
+            h('span', { className: 'recipe-options-move' }, [
+                h('button', {
+                    className: 'recipe-options-move-left'
+                }, '\u{2190}'),
+                h('button', {
+                    className: 'recipe-options-move-right'
+                }, '\u{2192}')
+            ])
+        ])
     ]);
+
+    return { domButton, domFavorite };
 };
 
 /**
  * Creates a recipe table for a given recipe.
- * @param {Recipes.Recipe} recipe the recipe to create DOM for
+ * @param {Recipe} recipe the recipe to create DOM for
  * @return {HTMLElement} the recipe table
  */
 export const getTable = recipe => {
@@ -123,8 +168,8 @@ export const getTable = recipe => {
     const findIngredient = (target, index = -1) =>
         lowerIngredients.findIndex((x, i) => i > index && x.includes(target));
 
-    /** @type {Recipes.RecipeRow[]} */
-    const rows = ingredients.map((ingredient) => ({ ingredient, cells: [ ] }));
+    /** @type {RecipeRow[]} */
+    const rows = ingredients.map((ingredient) => ({ ingredient, cells: [] }));
 
     for(const step of steps) {
         const [ rangeStart, count ] = step.range;

@@ -6,6 +6,7 @@ html {
     -webkit-text-size-adjust: none;
 
     --color-text: rgb(0, 0, 0);
+    --color-blue: rgb(0, 136, 255);
     --color-border: rgb(204, 204, 204);
     --color-recipe-border: rgb(27, 173, 248);
     --color-recipe-background: rgb(210, 235, 254);
@@ -16,6 +17,7 @@ html {
 @media (prefers-color-scheme: dark) {
     html {
         --color-text: rgb(255, 255, 255);
+        --color-blue: rgb(0, 145, 255);
         --color-border: rgb(0, 0, 0);
         --color-recipe-border: rgb(27, 173, 248);
         --color-recipe-background: rgb(32, 57, 77);
@@ -48,11 +50,40 @@ h2 {
     max-width: 300px;
 }
 
-.controls input,
+.controls input:not([type=checkbox]),
 .controls select {
     font-size: 1rem;
     border: 1px solid var(--color-border);
     border-radius: 0.2rem;
+}
+
+.controls button {
+    cursor: pointer;
+}
+
+.controls button:has(:is(label, a)) {
+    padding: 0;
+}
+
+.controls button > :is(label, a) {
+    display: block;
+    padding: 2px 6px 3px 6px;
+    cursor: pointer;
+    color: buttontext;
+}
+
+.controls button > a {
+    color: buttontext;
+    text-decoration: none;
+}
+
+.controls input[type=file] {
+    display: none;
+}
+
+.controls label:has(+ input[type=checkbox]),
+.controls input[type=checkbox] {
+    cursor: pointer;
 }
 
 .recipes {
@@ -86,6 +117,61 @@ h2 {
 
 .recipe {
     grid-column: 1 / -1;
+}
+
+.recipe-options {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem 0;
+    font-size: 1.25rem;
+    color: var(--color-text);
+}
+
+.recipe-options a {
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: var(--color-blue);
+}
+
+.recipe-options > * {
+    display: flex;
+    align-items: center;
+}
+
+.recipe-options label,
+.recipe-options input,
+.recipe-options button {
+    cursor: pointer;
+}
+
+.recipe-options-move {
+    display: none;
+}
+
+.recipe-options:has([name=recipe-favorite]:checked) .recipe-options-move {
+    display: flex;
+}
+
+.recipe-options label input[type=checkbox] {
+    margin-left: 0.25rem;
+}
+
+.recipe-options-move > * {
+    height: 1.75rem;
+    padding: 0 0.5rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-background-alt);
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.recipe-options .recipe-options-move-left {
+    border-right-width: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.recipe-options .recipe-options-move-right {
+    border-radius: 0 0.5rem 0.5rem 0;
 }
 
 @media (max-width: 640px) {

@@ -13,15 +13,34 @@
     <h1>Recipes</h1>
 
     <div class="controls">
-        <div>Sort By:</div>
+        <label for="sort">Sort By:</label>
         <select id="sort">
             <option value="time-old">Time (Oldest First)</option>
             <option value="time-new">Time (Newest First)</option>
             <option value="name-a">Name (A-Z)</option>
             <option value="name-z">Name (Z-A)</option>
         </select>
-        <div>Filter:</div>
+        <label for="filter">Filter:</label>
         <input id="filter" type="text" />
+        <div>Options:</div>
+        <div>
+            <button>
+                <a id="export" href="#" download="recipe-options.json">
+                    Export
+                </a>
+            </button>
+            <button id="import-label">
+                <label for="import">Import</label>
+            </button>
+            <input
+                type="file"
+                id="import"
+                value="Import"
+                accept="application/json"
+            />
+        </div>
+        <label for="keep-on">Keep Screen On:</label>
+        <input id="keep-on" type="checkbox" switch />
     </div>
 
     <div id="recipes" class="recipes"></div>
