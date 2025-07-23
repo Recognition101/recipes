@@ -8241,7 +8241,7 @@ export const recipes = [
             '2.5c water',
             '2 tsp soy sauce',
             '5oz Shiitake mushrooms (thin sliced)',
-            '4-6oz skinless salmon fillets',
+            '3 4-6oz skinless salmon fillets',
             'Salt',
             '2 Tbsp rice vinegar',
             '1 Tbsp toasted sesame oil',
