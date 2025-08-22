@@ -8758,5 +8758,26 @@ export const recipes = [
                 step: 'Top salad w/dressing'
             }
         ]
+    }, {
+        title: 'Parmesan Roasted Broccoli (6 servings)',
+        url: 'https://iwashyoudry.com/parmesan-roasted-broccoli/',
+        image: 'images/parmesan-roasted-broccoli.jpg',
+        ingredients: [
+            '6-7c broccoli florets',
+            '3-4 Tbsp olive oil',
+            '1/4c Italian breadcrumbs',
+            '1/2c shredded parmesan cheese',
+            '1 tsp garlic powder',
+            '1/2 tsp salt',
+            '1/4 tsp black pepper'
+        ],
+        steps: [
+            {
+                range: [0, -1],
+                step: 'Combine all, mix. Bake on foil-lined sheet at ' +
+                    '<b>425&deg;</b> for 12m, flip, return for ' +
+                    '10-15 more minutes.'
+            }
+        ]
     }
 ];
