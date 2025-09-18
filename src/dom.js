@@ -43,7 +43,7 @@ const wrap = (x, min, max) => {
  * @param {boolean} [wrapMax] if `true`, wrap max value. Otherwise clamp.
  * @return {number} the clamped/wrapped value
  */
-const clamp = (x, min, max, wrapMin, wrapMax) =>
+export const clamp = (x, min, max, wrapMin, wrapMax) =>
     (wrapMin && x < min) || (wrapMax && x > max)
         ? wrap(x, min, max)
         : Math.max(min, Math.min(max, x));
@@ -130,18 +130,26 @@ export const getButton = (recipe, id, isFavorite) => {
         className: 'recipe-toggle',
         dataset: { id: id.toString() }
     }, [
-        h('h2', { }, title),
-        h('img', { src: image }),
-        h('div', { className: 'recipe-options' }, [
-            h('a', { href: url }, '\u{1F517}'),
-            h('label', {}, [ '\u{2605}', domFavorite ]),
-            h('span', { className: 'recipe-options-move' }, [
-                h('button', {
-                    className: 'recipe-options-move-left'
-                }, '\u{2190}'),
-                h('button', {
-                    className: 'recipe-options-move-right'
-                }, '\u{2192}')
+        h('h2', { }, [
+            title,
+            h('button', { className: 'recipe-options-toggle' }, '\u{00A0}')
+        ]),
+        h('div', { className: 'recipe-content' }, [
+            h('img', { src: image }),
+            h('div', { className: 'recipe-options hidden' }, [
+                h('a', { href: url }, '\u{1F517} Source'),
+                h('label', {}, [ 'Favorite', domFavorite ]),
+                h('span', { className: 'recipe-options-move' }, [
+                    h('button', {
+                        className: 'recipe-options-move-left'
+                    }, '\u{2190}'),
+                    h('button', {
+                        className: 'recipe-options-move-index'
+                    }, '...'),
+                    h('button', {
+                        className: 'recipe-options-move-right'
+                    }, '\u{2192}')
+                ])
             ])
         ])
     ]);
@@ -212,6 +220,11 @@ export const getTable = recipe => {
         }
     }
 
-    const className = `grid grid-${columnCount} recipe hidden`;
-    return h('div', { className }, domChildren);
+    return h('div', { className: 'recipe hidden' }, [
+        h('div', { className: `grid grid-${columnCount}` }, domChildren),
+        h('button',
+            { className: 'recipe-copy-ingredients' },
+            'Copy Ingredients'
+        )
+    ]);
 };

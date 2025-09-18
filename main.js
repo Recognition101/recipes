@@ -1,5 +1,5 @@
 import { recipes } from './src/data.js';
-import { select, getButton, getTable } from './src/dom.js';
+import { select, getButton, getTable, clamp } from './src/dom.js';
 
 const storeKey = 'r101-recipes-options';
 
@@ -195,14 +195,32 @@ if (!hasDom) {
         const target = /** @type {HTMLElement} */(ev.target);
         const domLeft = target.closest('.recipe-options-move-left');
         const domRight = target.closest('.recipe-options-move-right');
+        const domMove = target.closest('.recipe-options-move-index');
         const domOptions = target.closest('.recipe-options');
+        const domOptionsToggle = target.closest('.recipe-options-toggle');
         const domRecipe = target.closest('.recipe-toggle');
+        const domCopy = target.closest('.recipe-copy-ingredients');
         const idString = domRecipe?.getAttribute('data-id') ?? null;
         const id = idString ? parseInt(idString, 10) : null;
 
-        if (id !== null && !domOptions) {
+        if (domOptionsToggle && domRecipe) {
+            const domOptionsIn = domRecipe.querySelector('.recipe-options');
+            domOptionsIn?.classList.toggle('hidden');
+            
+        } else if (id !== null && !domOptions) {
             idOpen = idOpen === id ? null : id;
             updateUi();
+
+        } else if (id !== null && domMove) {
+            const maxIndex = options.favorites.length;
+            const oldIndex = options.favorites.findIndex(x => x === id);
+            const message = `What Index (1 to ${maxIndex})?`;
+            const newIndexString = window.prompt(message, `${oldIndex + 1}`);
+            const newIndexNumber = parseInt(newIndexString || '0', 10) || 0;
+            const newIndex = clamp(newIndexNumber, 1, maxIndex) - 1;
+            options.favorites.splice(oldIndex, 1)[0];
+            options.favorites.splice(newIndex, 0, id);
+            updateUi(true);
 
         } else if (id !== null && (domLeft || domRight)) {
             const oldIndex = options.favorites.findIndex(x => x === id);
@@ -214,6 +232,11 @@ if (!hasDom) {
                 options.favorites[newIndex] = favorite;
                 updateUi(true);
             }
+
+        } else if (domCopy && idOpen !== null) {
+            const recipe = recipes[idOpen];
+            const list = recipe.ingredients.join('\n');
+            navigator.clipboard.writeText(list).catch(() => {});
         }
     });
 
